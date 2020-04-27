@@ -5,13 +5,18 @@ body {
 
 .button{
     display: flex;
-    color: cornflowerblue;
+    color: white;
     font-size: large;
     align-items: center;
+    background-color:  rgba(56, 106, 187, 4);
 }
+
+.button:hover{
+    background-color:  #2a5293;
+}
+
 
 .logo{
 display: flex;
 justify-content: center;
 }
-
