@@ -3,10 +3,29 @@
     display: flex;
     justify-content: center;
 }
+
     
 body {
     background-image: url(imagens/background.png);
+    background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(62, 108, 188, 80%);
+}
+
+.buttons{
+    display: flex;
+    color: white;
+    font-size: large;
+    align-items: center;
+    text-decoration: none; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 450;
+    background-color: rgba(62, 108, 188, 80%);
+    border-radius: 50%;
+    
+
 }
 
 #botao-pokelist{
@@ -22,6 +41,7 @@ body {
 #botao-comunidade{
     padding: 0;
     border: 0;
+    
 }
 
 #botao-poketv{
@@ -29,19 +49,9 @@ body {
     border: 0;
 }
 
-.buttons{
-    display: flex;
-    color: white;
-    font-size: large;
-    align-items: center;
-    background-color:  rgba(56, 106, 187, 4);
-    text-decoration: none; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 450;
-   
-}
 .buttons:hover{
     background-color:  #2a5293;
 }
+
 
 
