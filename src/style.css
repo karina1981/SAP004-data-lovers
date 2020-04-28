@@ -3,14 +3,36 @@ body {
     background-size: cover;
 }
 
+#botao-pokelist{
+    padding: 0;
+    border: 0;
+}
+
+#botao-eventos{
+    padding: 0;
+    border: 0;
+}
+
+#botao-comunidade{
+    padding: 0;
+    border: 0;
+}
+
+#botao-poketv{
+    padding: 0;
+    border: 0;
+}
+
 .button{
     display: flex;
     color: white;
     font-size: large;
     align-items: center;
     background-color:  rgba(56, 106, 187, 4);
+    margin:  0px;
+    text-decoration: none; 
+    
 }
-
 .button:hover{
     background-color:  #2a5293;
 }
