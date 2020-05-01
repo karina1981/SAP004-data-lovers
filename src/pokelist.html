@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokeList</title>
+    <link rel="stylesheet" href="secondstylesheet.css"/>
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="imagem-logo">
+            <img src="imagens/logopokefun.png" alt="logo pokefun" width="350" height="130">
+        </div>
+    </header>
+
+    <nav class="barra-navegacao">
+
+      <form class= "search">
+        <input type="search" placeholder="Pesquisar Pokémon" class="search-box" id="search-box">
+        <img src="imagens/lupa.png" alt="imagem lupa" width="35" height="35" class="search-image" id="button-search-image">
+      </form>
+
+      <select name="select-type" id=>
+          <option value="" disabled selected>Filtrar por Tipo&nbsp;</option>
+          <option value="Normal">Normal</option>
+          <option value="Fighting">Fighting</option>
+          <option value="Flying">Flying</option>
+          <option value="Poison">Poinson</option>
+          <option value="Ground">Ground</option>  
+          <option value="Rock">Rock</option>
+          <option value="Bug">Bug</option>
+          <option value="Ghost">Ghost</option>
+          <option value="Steel">Steel</option>
+          <option value="Fire">Fire</option>  
+          <option value="Water">Water</option>  
+          <option value="Grass">Grass</option>  
+          <option value="Eletric">Eletric</option>  
+          <option value="Psychi">Psychi</option>  
+          <option value="Ice">Ice</option>
+          <option value="Dragon">Dragon</option>
+          <option value="Dark">Dark</option>
+          <option value="Fairy">Fairy</option>
+        </select>
+
+        <select name="order-by-alphabet">
+            <option value="" disabled selected>Ordenar por Nome</option>
+            <option value="ascendente">A-Z</option>
+            <option value="descentende">Z-A</option>
+        </select>    
+
+
+    <script src= "main.js" type="module"></script>
 </body>
 </html>
