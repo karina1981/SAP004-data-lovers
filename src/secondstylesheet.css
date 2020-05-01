@@ -1,0 +1,35 @@
+
+.imagem-logo{
+    display: flex;
+    justify-content: center;
+
+}
+
+.barra-navegacao{
+    display: flex;
+
+}
+
+body{
+    background-image: url(imagens/background.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(62, 108, 188);
+
+}
+
+.texto-em-construcao{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #606163;
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(243, 243, 243, 35%);
+  
+}
