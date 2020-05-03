@@ -9,7 +9,6 @@ function searchPokemon(){
   console.log(pokemonBuscado)
 }
 
-
 function filterType(){
    let escolhaTipo = document.getElementById("select-type").value
    console.log(escolhaTipo)
@@ -19,7 +18,7 @@ function orderByAlphabet(){
     let escolhaOrdem = document.getElementById("order-by-alphabet").value
     console.log(escolhaOrdem)
 }
-----------*/
+------------------*/
 
 
 /* BOTÃO BUSCAR*/ 
