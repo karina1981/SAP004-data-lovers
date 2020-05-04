@@ -1,4 +1,4 @@
-import { search } from './data.js';
+//import { search } from './data.js';
 
 import data from './data/pokemon/pokemon.js';
 
@@ -6,27 +6,29 @@ import data from './data/pokemon/pokemon.js';
 /*---------------Obs: são só testes dos botoes
 function searchPokemon(){
   let pokemonBuscado =document.getElementById("search-box").value
-  console.log(pokemonBuscado)
+  alert(pokemonBuscado)
 }
 
 function filterType(){
    let escolhaTipo = document.getElementById("select-type").value
-   console.log(escolhaTipo)
+   alert(escolhaTipo)
 }
 
 function orderByAlphabet(){
     let escolhaOrdem = document.getElementById("order-by-alphabet").value
-    console.log(escolhaOrdem)
+    alert(escolhaOrdem)
 }
+
 ------------------*/
 
 
-/* BOTÃO BUSCAR*/ 
+// BOTÃO BUSCAR 
 document.getElementById("search-box").addEventListener("input", searchPokemon);
-/* FILTRAR TIPO*/ 
+// FILTRAR TIPO
 document.getElementById("select-type").addEventListener("change", filterType);
-/* ORDENAR */ 
+// ORDENAR 
 document.getElementById("order-by-alphabet").addEventListener("change", orderByAlphabet);
+
 
 
 

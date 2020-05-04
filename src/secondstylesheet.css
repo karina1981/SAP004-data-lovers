@@ -7,8 +7,17 @@
 
 .barra-navegacao{
     display: flex;
+    
+}
+
+.button-style{
+    display: flex;
+    width: 150px; 
+    height:30px;
 
 }
+
+
 
 body{
     background-image: url(imagens/background.png);
