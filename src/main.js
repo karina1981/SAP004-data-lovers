@@ -2,41 +2,22 @@
 
 import data from './data/pokemon/pokemon.js';
 
+const pokeData = data.pokemon; //pokeData = array
+const rootElement = document.getElementById("root") //importanto div do html
 
-/*---------------Obs: são só testes dos botoes
-function searchPokemon(){
-  let pokemonBuscado =document.getElementById("search-box").value
-  alert(pokemonBuscado)
-}
+
 
 function filterType(){
-   let escolhaTipo = document.getElementById("select-type").value
-   alert(escolhaTipo)
+   const tipoEscolhido = document.getElementById("select-type").value //pegando o tipo escolhido pelo usuário. const tipoEscolhido recebe.
+   
+   const filteredData = pokeData.filter(function (pokemon){ //const filteredData é onde vai receber o resultado filtrado. pokeData (array com o data.pokemon).filter e escrevo a função que executa o filtro
+     return pokemon.type.includes(tipoEscolhido) //includes compara elementos de outra array, pois type é uma array dentro da array pokeData. 
+   })
+  console.log(filteredData)
 }
 
-function orderByAlphabet(){
-    let escolhaOrdem = document.getElementById("order-by-alphabet").value
-    alert(escolhaOrdem)
-}
-
-------------------*/
-
-
-// BOTÃO BUSCAR 
-document.getElementById("search-box").addEventListener("input", searchPokemon);
-// FILTRAR TIPO
-document.getElementById("select-type").addEventListener("change", filterType);
-// ORDENAR 
-document.getElementById("order-by-alphabet").addEventListener("change", orderByAlphabet);
 
 
 
+document.getElementById("select-type").addEventListener("change", filterType) //verificando evento.
 
-
-
-
-
-
-
-
-//console.log(example, data);
