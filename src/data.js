@@ -1,10 +1,6 @@
 // funções de exemplo
 
-
-
-
-
-  const data = {
+ export const data = {
   example: () => {
     return 'example';
   },
