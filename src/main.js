@@ -41,7 +41,16 @@ function filterType() {
   filteredData.map(drawCard) //mapea os pokemons filtrados e chama a função drawCard, que gera o card.
 }
 
-
+//-------função filtra pelo nome buscado na caixa------
+function filterSearchBox () {
+  let nomeDigitado = document.getElementById("search-box").value
+  //nomeDigitado = nomeDigitado.substring(0,1).toUpperCase().concat(nomeDigitado.substring(1))
+  const nomeFiltrado = pokeData.filter(function (pokemon) {
+    return pokemon.name.includes(nomeDigitado)
+  })
+  rootElement.innerHTML = ''
+  nomeFiltrado.map(drawCard)
+}
 
 
 
@@ -49,4 +58,4 @@ function filterType() {
 //verificando eventos
 document.getElementById("select-type").addEventListener("change", filterType);
 //document.getElementById("order-by-alphabet").addEventListener("change", OrderByAlphabet);
-//document.getElementById("search-box").addEventListener("search", filterSearchBox)
+document.getElementById("search-box").addEventListener("input", filterSearchBox)
