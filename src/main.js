@@ -43,13 +43,13 @@ function filterType() {
 
 //-------função filtra pelo nome buscado na caixa------
 function filterSearchBox () {
-  let nomeDigitado = document.getElementById("search-box").value
-  //nomeDigitado = nomeDigitado.substring(0,1).toUpperCase().concat(nomeDigitado.substring(1))
-  const nomeFiltrado = pokeData.filter(function (pokemon) {
-    return pokemon.name.includes(nomeDigitado)
+  let nameSearched = document.getElementById("search-box").value
+  nameSearched = nameSearched.charAt(0).toUpperCase() + nameSearched.slice(1); //deixando a inicial maiúscula
+  const filteredName = pokeData.filter(function (pokemon) {
+    return pokemon.name.includes(nameSearched)
   })
   rootElement.innerHTML = ''
-  nomeFiltrado.map(drawCard)
+  filteredName.map(drawCard)
 }
 
 
