@@ -1,4 +1,4 @@
-//import { search } from './data.js';
+import search from './data.js';
 
 import data from './data/pokemon/pokemon.js';
 
@@ -31,25 +31,25 @@ pokeData.map(drawCard)
 
 //-----função filtrar por tipo------
 function filterType() {
-  const tipoEscolhido = document.getElementById("select-type").value //pegando o tipo escolhido pelo usuário. const tipoEscolhido recebe.
+  const tipoEscolhido = document.getElementById("select-type").value
 
-  const filteredData = pokeData.filter(function (pokemon) { //const filteredData é onde vai receber o resultado filtrado. pokeData (array com o data.pokemon).filter e escrevo a função que executa o filtro
-    return pokemon.type.includes(tipoEscolhido) //includes compara elementos de outra array, pois type é uma array dentro da array pokeData. 
-  })
- 
+  const filteredData = search.filterByType(pokeData, tipoEscolhido) 
+   
   rootElement.innerHTML = '' //apaga todos os 151 cards que estavam aparecendo.
   filteredData.map(drawCard) //mapea os pokemons filtrados e chama a função drawCard, que gera o card.
 }
 
+
+
 //-------função filtra pelo nome buscado na caixa------
 function filterSearchBox () {
   let nameSearched = document.getElementById("search-box").value
-  nameSearched = nameSearched.charAt(0).toUpperCase() + nameSearched.slice(1); //deixando a inicial maiúscula
-  const filteredName = pokeData.filter(function (pokemon) {
-    return pokemon.name.includes(nameSearched)
-  })
+  nameSearched = nameSearched.charAt(0).toUpperCase() + nameSearched.slice(1).toLowerCase(); //deixando a inicial maiúscula e o restante minúscula.
+  
+  const filteredData = search.filterByName(pokeData, nameSearched) 
+    
   rootElement.innerHTML = ''
-  filteredName.map(drawCard)
+  filteredData.map(drawCard)
 }
 
 
