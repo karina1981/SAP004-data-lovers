@@ -14,10 +14,8 @@
     display: flex;
     width: 150px; 
     height:30px;
-
+    text-decoration: none;
 }
-
-
 
 body{
     background-image: url(imagens/background.png);

@@ -39,8 +39,6 @@ function filterType() {
   filteredData.map(drawCard) //mapea os pokemons filtrados e chama a função drawCard, que gera o card.
 }
 
-
-
 //-------função filtra pelo nome buscado na caixa------
 function filterSearchBox () {
   let nameSearched = document.getElementById("search-box").value
@@ -52,10 +50,50 @@ function filterSearchBox () {
   filteredData.map(drawCard)
 }
 
+//-------função ordenar az za------------
+
+function OrderByAlphabet () {
+  const orderDefined = document.getElementById("order-by-alphabet").value
+
+  let orderedList
+  if(orderDefined === "ascendente") {
+    orderedList = pokeData.sort(function (a, b) {
+      const nomeA = a.name.toUpperCase()
+      const nomeB = a.name.toUpperCase()
+      
+      if(nomeA > nomeB ) {
+        return 1
+      }
+      if(nomeA < nomeB) {
+        return -1
+      }
+      return 0
+    })
+  }
+
+  if (orderDefined === "descendente") {
+    orderedList = pokeData.sort(function (a, b) {
+      const nomeA = a.name.toUpperCase()
+      const nomeB = b.name.toUpperCase()
+      
+      if(nomeA < nomeB) {
+        return 1
+      }
+      if(nomeA > nomeB) {
+        return -1
+      }
+      return 0
+    })
+  }  
+   
+  rootElement.innerHTML = "" 
+  orderedList.map(drawCard) 
+}
+
 
 
 
 //verificando eventos
 document.getElementById("select-type").addEventListener("change", filterType);
-//document.getElementById("order-by-alphabet").addEventListener("change", OrderByAlphabet);
-document.getElementById("search-box").addEventListener("input", filterSearchBox)
+document.getElementById("order-by-alphabet").addEventListener("change", OrderByAlphabet);
+document.getElementById("search-box").addEventListener("input", filterSearchBox);
