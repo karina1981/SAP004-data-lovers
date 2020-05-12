@@ -18,14 +18,11 @@
     <nav class="barra-navegacao">
 
       <form class= "search">
-        <input type="search" placeholder="Pesquisar Pokémon" class="button-style" id="search-box">
+        <input type="text" placeholder="Pesquisar Pokémon" class="button-style" id="search-box">
       </form> 
         
-    <!-- <button id="button-search">
-        <img src="imagens/lupa.png" alt="imagem lupa" width="35" height="35" class="search-image" id="button-search-image">
-      </button> -->
-       
-      <select id="select-type" id="select-type" class="button-style">
+    
+      <select id="select-type" class="button-style">
           <option value="" disabled selected>Filtrar por Tipo&nbsp;</option>
           <option value="Normal">Normal</option>
           <option value="Fighting">Fighting</option>
@@ -35,26 +32,25 @@
           <option value="Rock">Rock</option>
           <option value="Bug">Bug</option>
           <option value="Ghost">Ghost</option>
-          <option value="Steel">Steel</option>
           <option value="Fire">Fire</option>  
           <option value="Water">Water</option>  
           <option value="Grass">Grass</option>  
-          <option value="Eletric">Eletric</option>  
-          <option value="Psychi">Psychi</option>  
+          <option value="Electric">Electric</option>
+          <option value="Psychic">Psychic</option>  
           <option value="Ice">Ice</option>
           <option value="Dragon">Dragon</option>
-          <option value="Dark">Dark</option>
-          <option value="Fairy">Fairy</option>
-        </select>
+      </select>
 
-        <select id="order-by-alphabet" name="order-by-alphabet" class="button-style">
+      <select id="order-by-alphabet" name="order-by-alphabet" class="button-style">
             <option value="" disabled selected>Ordenar por Nome</option>
             <option value="ascendente">A-Z</option>
-            <option value="descentende">Z-A</option>
-        </select>    
-
-        <button id="statistics" class="button-style">Estatísticas</button>
-
+            <option value="descendente">Z-A</option>
+      </select>    
+        
+    
+        <a href="./index.html"> <button class="button-style">HOME</button></a>
+     
+        
         </nav>
 
     <div id="root"></div>
