@@ -40,3 +40,7 @@ body{
     background-color: rgb(243, 243, 243, 35%);
   
 }
+
+.percent-information{
+    display: flex;
+}
