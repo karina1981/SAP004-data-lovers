@@ -1,44 +1,71 @@
-
 .imagem-logo{
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
 
 .barra-navegacao{
-    display: flex;
-    
+  display: flex;
 }
 
 .button-style{
-    display: flex;
-    width: 150px; 
-    height:30px;
-    text-decoration: none;
+  display: flex;
+  width: 150px; 
+  height:30px;
+  text-decoration: none;
 }
 
 body{
-    background-image: url(imagens/background.png);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-color: rgba(62, 108, 188);
-
+  background-image: url(imagens/background.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgba(62, 108, 188);
 }
 
 .texto-em-construcao{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #606163;
-    padding: 10px;
-    margin: 0;
-    background-color: rgb(243, 243, 243, 35%);
-  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #606163;
+  padding: 10px;
+  margin: 0;
+  background-color: rgb(243, 243, 243, 35%);
+}
+
+.pokeimg {
+  width: 60%;
+}
+
+.pokecard {
+  background-color: rgba(62, 108, 188, 80%);
+  border-radius: 18%;
+  align-items: center;
+  color: white;
+  font-size: 19px;
+  width: 15%;
+  min-height: 235px;
+  float: left;
+  margin: 10px;
+  padding: 1em 1em 2em 2em;
+}
+
+.pokelist {
+  border-radius: 5%;
+  font-size: 80%;
+  width: 80%;
+  float: left;
+  padding: 1em;
+  background: rgba(99, 99, 99, 0.7);
+}
+
+.pokecard:hover {
+  background: url('imagens/pokebola.png');
+  background-size: 150%;
+  /* color: #FFD700; */
 }
 
 .percent-information{

@@ -1,55 +1,56 @@
-// funções de exemplo
-
 const search = {
-  filterByType: (data, type) => {
-    if (!data) {
-      throw TypeError('No data has been provided');
+  filterData: (data,conditions)=>{
+    if (!data){
+      throw TypeError('no data has been provided');
     }
-    const filteredData = data.filter(function (pokemon) {
-      return pokemon.type.includes(type)
+    const filteredData = data.filter((pokemon)=>{
+      return pokemon[conditions.key].includes(conditions.value);
     })
-
-    return filteredData
-  },
-
-  filterByName: (data, name) => {
-    if (!data) {
-      throw TypeError('No data has been provided');
-    }
-    const filteredData = data.filter(function (pokemon) {
-      return pokemon.name.includes(name)
-    })
-
-    return filteredData
+    return filteredData;
   },
   
-  sortData: () => {
-    return 'ok filtrado'
-},
-  computeStats: () => {
-    return 'ok filtrado'
-}
-}
-
-    
-export default search 
- /*export const search = {
-  example: () => {
-    return 'example';
-  },
-  anotherExample: () => {
-    return 'OMG';
-  },
-  filterData: (data) => {
-    if (!data) {
-      throw TypeError('Hello');
+  sortData: (pokeData, orderDefined) => {
+    if (!pokeData || !orderDefined){
+      throw TypeError('no data has been provided');
     }
-    return 'ok filtrado';
-  },
-  sortData: () => {
-    return 'ok filtrado'
+
+    let orderedList
+    if(orderDefined === "ascendente") {
+      orderedList = pokeData.sort(function (a, b) {
+        const nomeA = a.name.toUpperCase();
+        const nomeB = b.name.toUpperCase();
+
+        if(nomeA > nomeB ) {
+          return 1;
+        }
+
+        if(nomeA < nomeB) {
+          return -1;
+        }
+        // return 0;
+      });
+    }
+
+    if (orderDefined === "descendente") {
+      orderedList = pokeData.sort(function (a, b) {
+        const nomeA = a.name.toUpperCase();
+        const nomeB = b.name.toUpperCase();
+
+        if(nomeA < nomeB) {
+          return 1;
+        }
+
+        if(nomeA > nomeB) {
+          return -1;
+        }
+        // return 0;
+      });
+    }
+    return orderedList;
   },
   computeStats: () => {
     return 'ok filtrado'
   }
-} */
+}
+
+export default search;

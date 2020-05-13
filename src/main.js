@@ -8,39 +8,39 @@ const rootElement = document.getElementById("root"); //importanto div do html
 const percentElement = document.getElementById("percent")
 
 //estrutura do card
-const pokeCard = function (num, img, name, type, weaknesses) {
+
+const pokeCard = function (pokemon) {
   return `<div class="pokecard">
-            ${num}
-            <img class="miniaturaPokemon" src="${img}" alt ="miniatura pokemon"> 
-            ${name} 
-            Type: ${type} 
-            Weaknesses: ${weaknesses}
-         </div>`
-}
+            <div class="pokeimg">
+              <img class='miniaturaPokemon' src="${pokemon.img}" alt ='miniatura pokemon'>
+            </div>
+            <div class='pokelist'> 
+              Nome: ${pokemon.name} <br>
+              Tipo: ${pokemon.type} <br>
+              Weaknesses: ${pokemon.weaknesses}
+            </div>
+          </div>`
+};
 
 //função que gera e coloca o conteúdo na div. Os parametros dentro de pokeCard estão assim um embaixo do outro para melhor leitura. 
 const drawCard = function (pokemon) {
-  rootElement.innerHTML += pokeCard(pokemon.num,
-    pokemon.img,
-    pokemon.name,
-    pokemon.type,
-    pokemon.weaknesses)
-}
+  rootElement.innerHTML += pokeCard(pokemon)
+};
 
 //mapeando todos os 151 pokemons e chamando a função que gera o card. Todos os pokemons de pokeData aparecem. 
-pokeData.map(drawCard)
+pokeData.map(drawCard);
 
 
 //-----função filtrar por tipo------
 function filterType() {
   const tipoEscolhido = document.getElementById("select-type").value
 
-  const filteredData = search.filterByType(pokeData, tipoEscolhido)
+  const filteredData = search.filterData(pokeData, { 'key': 'type', 'value': tipoEscolhido}) 
 
   rootElement.innerHTML = '' //apaga todos os 151 cards que estavam aparecendo.
   filteredData.map(drawCard) //mapea os pokemons filtrados e chama a função drawCard, que gera o card.
 
-  // Testando cada pokemon para saber se ele é do tipo escolhido
+  // Testando cada pokemon paralimparCaixaPesquisa saber se ele é do tipo escolhido
   let quantidadeTipoEscolhido = 0
   for (let i = 0; i < pokeData.length; i++) {
     if (pokeData[i].type.includes(tipoEscolhido)) {
@@ -64,10 +64,11 @@ function filterSearchBox() {
   let nameSearched = document.getElementById("search-box").value
   nameSearched = nameSearched.charAt(0).toUpperCase() + nameSearched.slice(1).toLowerCase(); //deixando a inicial maiúscula e o restante minúscula.
 
-  const filteredData = search.filterByName(pokeData, nameSearched)
 
+  const filteredData = search.filterData(pokeData, { 'key': 'name', 'value': nameSearched}) 
   percentElement.innerHTML = ""
   rootElement.innerHTML = ""
+
   filteredData.map(drawCard)
   limparFiltrarTipo()
   limparOrder()
@@ -75,43 +76,14 @@ function filterSearchBox() {
 
 //-------função ordenar az za------------
 
-function OrderByAlphabet() {
+function OrderByAlphabet () {
   const orderDefined = document.getElementById("order-by-alphabet").value
 
-  let orderedList
-  if (orderDefined === "ascendente") {
-    orderedList = pokeData.sort(function (a, b) {
-      const nomeA = a.name.toUpperCase()
-      const nomeB = b.name.toUpperCase()
-
-      if (nomeA > nomeB) {
-        return 1
-      }
-      if (nomeA < nomeB) {
-        return -1
-      }
-      return 0
-    })
-  }
-
-  if (orderDefined === "descendente") {
-    orderedList = pokeData.sort(function (a, b) {
-      const nomeA = a.name.toUpperCase()
-      const nomeB = b.name.toUpperCase()
-
-      if (nomeA < nomeB) {
-        return 1
-      }
-      if (nomeA > nomeB) {
-        return -1
-      }
-      return 0
-    })
-  }
+  const orderedList = search.sortData(pokeData, orderDefined);
 
   percentElement.innerHTML =""
-  rootElement.innerHTML = ""
-  orderedList.map(drawCard)
+  rootElement.innerHTML = "" 
+  orderedList.map(drawCard) 
   limparFiltrarTipo()
   limparCaixaPesquisa()
 }
@@ -133,4 +105,3 @@ function limparFiltrarTipo(){
 document.getElementById("select-type").addEventListener("change", filterType);
 document.getElementById("order-by-alphabet").addEventListener("change", OrderByAlphabet);
 document.getElementById("search-box").addEventListener("input", filterSearchBox)
-

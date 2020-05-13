@@ -2,4 +2,6 @@
 *.swp
 .nyc_output/
 coverage/
+
+.vscode/
 node_modules/
