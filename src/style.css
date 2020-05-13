@@ -59,16 +59,16 @@ p{
   background-color: rgb(243, 243, 243, 35%);
 }
 
-
-
 @media (max-width: 850px)
 {
   .botoes-todos{
     display: grid;
   }
+
   .buttons{
     margin: 0.4em;
   }
+
 .logo img {
   width: 80%;
   }

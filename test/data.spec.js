@@ -1,7 +1,6 @@
 import search from '../src/data.js';
 import pokemons from '../src/data/pokemon/pokemon.js';
 
-
 describe('filterData', () => {
 
   it('is a function', () => {

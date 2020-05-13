@@ -1,13 +1,10 @@
-
 .imagem-logo{
   display: flex;
   justify-content: center;
-
 }
 
 .barra-navegacao{
   display: flex;
-  
 }
 
 .button-style{
@@ -24,7 +21,6 @@ body{
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: rgba(62, 108, 188);
-
 }
 
 .texto-em-construcao{
@@ -39,9 +35,11 @@ body{
   margin: 0;
   background-color: rgb(243, 243, 243, 35%);
 }
+
 .pokeimg {
   width: 60%;
 }
+
 .pokecard {
   background-color: rgba(62, 108, 188, 80%);
   border-radius: 18%;
@@ -70,3 +68,6 @@ body{
   /* color: #FFD700; */
 }
 
+.percent-information{
+    display: flex;
+}
