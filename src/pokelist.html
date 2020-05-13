@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokeList</title>
-    <link rel="stylesheet" href="secondstylesheet.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeList</title>
+  <link rel="stylesheet" href="secondstylesheet.css"/>
 </head>
 
 <body>
 
-    <header>
-        <div class="imagem-logo">
-            <img src="imagens/logopokefun.png" alt="logo pokefun" width="350" height="130">
-        </div>
-    </header>
+  <header>
+    <div class="imagem-logo">
+      <img src="imagens/logopokefun.png" alt="logo pokefun" width="350" height="130">
+    </div>
+  </header>
 
-    <nav class="barra-navegacao">
+  <nav class="barra-navegacao">
 
-      <form class= "search">
-        <input type="text" placeholder="Pesquisar Pokémon" class="button-style" id="search-box">
-      </form> 
-        
-    
+    <form class= "search">
+      <input type="text" placeholder="Pesquisar Pokémon" class="button-style" id="search-box">
+    </form> 
+
       <select id="select-type" class="button-style">
-          <option value="" disabled selected>Filtrar por Tipo&nbsp;</option>
-          <option value="Normal">Normal</option>
-          <option value="Fighting">Fighting</option>
-          <option value="Flying">Flying</option>
-          <option value="Poison">Poinson</option>
-          <option value="Ground">Ground</option>  
-          <option value="Rock">Rock</option>
-          <option value="Bug">Bug</option>
-          <option value="Ghost">Ghost</option>
-          <option value="Fire">Fire</option>  
-          <option value="Water">Water</option>  
-          <option value="Grass">Grass</option>  
-          <option value="Electric">Electric</option>
-          <option value="Psychic">Psychic</option>  
-          <option value="Ice">Ice</option>
-          <option value="Dragon">Dragon</option>
+        <option value="" disabled selected>Filtrar por Tipo&nbsp;</option>
+        <option value="Normal">Normal</option>
+        <option value="Fighting">Fighting</option>
+        <option value="Flying">Flying</option>
+        <option value="Poison">Poinson</option>
+        <option value="Ground">Ground</option>  
+        <option value="Rock">Rock</option>
+        <option value="Bug">Bug</option>
+        <option value="Ghost">Ghost</option>
+        <option value="Fire">Fire</option>  
+        <option value="Water">Water</option>  
+        <option value="Grass">Grass</option>  
+        <option value="Electric">Electric</option>
+        <option value="Psychic">Psychic</option>  
+        <option value="Ice">Ice</option>
+        <option value="Dragon">Dragon</option>
       </select>
 
       <select id="order-by-alphabet" name="order-by-alphabet" class="button-style">
-            <option value="" disabled selected>Ordenar por Nome</option>
-            <option value="ascendente">A-Z</option>
-            <option value="descendente">Z-A</option>
+        <option value="" disabled selected>Ordenar por Nome</option>
+        <option value="ascendente">A-Z</option>
+        <option value="descendente">Z-A</option>
       </select>    
-        
-    
+
         <a href="./index.html"> <button class="button-style">HOME</button></a>
-     
-        
+
         </nav>
 
     <div id="root"></div>
