@@ -48,19 +48,20 @@ const search = {
     }
     return orderedList;
   },
-  computeStats: (pokeData, tipoEscolhido) => {
-    if (!pokeData || !tipoEscolhido) {
+
+  computeStats: (pokeData, selectedType) => {
+    if (!pokeData || !selectedType) {
       throw TypeError('no data has been provided');
     }
 
-    let quantidadeTipoEscolhido = 0
+    let numSelectedType = 0
     for (let i = 0; i < pokeData.length; i++) {
-      if (pokeData[i].type.includes(tipoEscolhido)) {
-        quantidadeTipoEscolhido++;
+      if (pokeData[i].type.includes(selectedType)) {
+        numSelectedType++;
       }
     }
-    let porcentagemFinal = quantidadeTipoEscolhido / pokeData.length * 100
-    return porcentagemFinal.toFixed(2)
+    let finalPercentage = numSelectedType / pokeData.length * 100
+    return finalPercentage.toFixed(2)
   }
 }
 

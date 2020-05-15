@@ -29,20 +29,19 @@ const drawCard = function (pokemon) {
 //map todos os 151 pokemons e chamando a função que gera o card. Todos os pokemons de pokeData aparecem. 
 pokeData.map(drawCard);
 
-
 //-----função filtrar por tipo-----
 function filterType() {
-  const tipoEscolhido = document.getElementById("select-type").value
+  const selectedType = document.getElementById("select-type").value
 
-  const filteredData = search.filterData(pokeData, { 'key': 'type', 'value': tipoEscolhido })
+  const filteredData = search.filterData(pokeData, { 'key': 'type', 'value': selectedType})
 
   rootElement.innerHTML = '' //apaga todos os 151 cards que estavam aparecendo.
   filteredData.map(drawCard) //mapea os pokemons filtrados e chama a função drawCard, que gera o card.
 
   //----calculando porcentagem----
-  const porcentagemFinal = search.computeStats(pokeData, tipoEscolhido)
+  const finalPercentage = search.computeStats(pokeData, selectedType)
 
-  percentElement.innerHTML = `${porcentagemFinal}% dos Pokemons são do tipo ${tipoEscolhido}`
+  percentElement.innerHTML = `${finalPercentage}% dos Pokemons são do tipo ${selectedType}`
   
   limparCaixaPesquisa()
   limparOrder()
