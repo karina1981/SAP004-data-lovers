@@ -49,17 +49,18 @@ const search = {
     return orderedList;
   },
   computeStats: (pokeData, tipoEscolhido) => {
-    if (!pokeData || tipoEscolhido) {
+    if (!pokeData || !tipoEscolhido) {
       throw TypeError('no data has been provided');
     }
+
     let quantidadeTipoEscolhido = 0
     for (let i = 0; i < pokeData.length; i++) {
       if (pokeData[i].type.includes(tipoEscolhido)) {
-        quantidadeTipoEscolhido++
+        quantidadeTipoEscolhido++;
       }
     }
     let porcentagemFinal = quantidadeTipoEscolhido / pokeData.length * 100
-    porcentagemFinal = porcentagemFinal.toFixed(2)
+    return porcentagemFinal.toFixed(2)
   }
 }
 
