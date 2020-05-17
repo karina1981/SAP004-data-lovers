@@ -74,11 +74,12 @@ body{
 
 
 .modal_background {
+  /* background: url('imagens/pokebola-aberta.png'); */
   display: none;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -88,8 +89,36 @@ body{
 }
 
 .modal_background .modal_pokemon {
+  background: url('imagens/pokebola-aberta.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
   border-radius: 10px;
-  width: 700px;
+  width: 450px;
   height: 500px;
-  background: rgb(255, 255, 255);
+}
+.modal_pokemon_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 100%;
+}
+.pokeimg-modal{
+  z-index: 999;
+}
+
+.pokelist-modal{
+  width: 12%;
+  background: rgba(164, 10, 10, 0.5);
+  border-radius: 10px;
+  padding: 1.4em;
+  line-height: 1em;
+  display: block;
+  color: white;
+  position: absolute;
+  left: 31%;
+}
+
+.miniaturaPokemon-modal{
+  width: 262px;
 }

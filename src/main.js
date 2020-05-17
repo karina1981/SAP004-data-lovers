@@ -97,6 +97,16 @@ document.getElementById("select-type").addEventListener("change", filterType);
 document.getElementById("order-by-alphabet").addEventListener("change", OrderByAlphabet);
 document.getElementById("search-box").addEventListener("input", filterSearchBox);
 
+let closeModal = (event) => {
+  console.log(event.target.className)
+  if (event.target.className == "modal_background" || event.target.className == "buttonCloseModal"){
+    document.querySelector(".modal_background").style.display = "none"
+  }
+}
+document.querySelector(".modal_background").addEventListener("click", closeModal);
+
+document.querySelector(".buttonCloseModal").addEventListener("click", closeModal);
+
 document.getElementById("root").addEventListener("click", (event) => { 
 
   if (event.target) {
@@ -109,10 +119,10 @@ document.getElementById("root").addEventListener("click", (event) => {
         
         console.log('setPokecardDetails', pokemon);
 
-        let detailPokemon = `<div class="pokeimg">
-            <img class='miniaturaPokemon' src="${pokemon.img}" alt ='miniatura pokemon'>
+        let detailPokemon = `<div class="pokeimg-modal">
+            <img class='miniaturaPokemon-modal' src="${pokemon.img}" alt ='miniatura pokemon'>
           </div>
-          <div class='pokelist'> 
+          <div class='pokelist-modal'> 
             Nome: ${pokemon.name} <br>
             Tipo: ${pokemon.type} <br>
             Tamanho: ${pokemon.height} <br>
