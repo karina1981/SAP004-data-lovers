@@ -43,7 +43,7 @@ function filterType() {
   //----calculando porcentagem----
   const finalPercentage = search.computeStats(pokeData, selectedType)
 
-  percentElement.innerHTML = `${finalPercentage}% dos Pokemons são do tipo ${selectedType}`
+  percentElement.innerHTML = `${finalPercentage}% dos Pokémon são do tipo ${selectedType}`
   
   limparCaixaPesquisa()
   limparOrder()
