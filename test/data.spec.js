@@ -36,11 +36,13 @@ describe('sortData', () => {
   it('apply sorted name ascendente', () => {
     let sortData = search.sortData(pokemons.pokemon, "ascendente");
     expect(sortData[0].name).toBe('Abra');
+    expect(sortData[150].name).toBe('Zubat');
   });
 
   it('apply sorted name descendente', () => {
     let sortData = search.sortData(pokemons.pokemon, "descendente");
     expect(sortData[0].name).toBe('Zubat');
+    expect(sortData[150].name).toBe('Abra');
   });
 });
 
@@ -49,8 +51,15 @@ describe('computeStats', () => {
     expect(typeof search.computeStats).toBe('function');
   });
 
-  it('is return string', () => {
-    expect(search.computeStats()).toBe('ok filtrado');
+  it('arguments types',() =>{
+    expect(() => search.computeStats()).toThrow(TypeError);
+    expect(() => search.computeStats(0)).toThrow(TypeError);
+    expect(() => search.computeStats(null,[])).toThrow(TypeError);
+    expect(() => search.computeStats(0,0)).toThrow(TypeError)
+  });
 
+  it('calculate type percentages', () => {
+    expect(search.computeStats(pokemons.pokemon, 'Ice')).toBe('3.31')
+    expect(search.computeStats(pokemons.pokemon, 'Normal')).toBe('15.89')
   })
 });
