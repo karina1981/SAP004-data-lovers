@@ -1,17 +1,42 @@
 .imagem-logo{
   display: flex;
   justify-content: center;
+  padding: 10px;
+  margin: 20px;
 }
 
 .barra-navegacao{
+  display: flex;
+  margin: 20px;
+  justify-content: space-evenly;
+  
+}
+
+.btn-space{
   display: flex;
 }
 
 .button-style{
   display: flex;
-  width: 150px; 
-  height:30px;
-  text-decoration: none;
+  width: 160px; 
+  height: 40px;
+  margin: 0px;
+  padding: 0px 2px 0px 5px;
+  border: 0px;
+  font-size: 18px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.btn-orientation{
+  display: flex;
+  align-items: center;
+  background-color: #ef4036;
+  color: white;
+  padding: 8px;
+  margin: 0px 5px 0px 0px;
+  border-radius: 5%;
+  font-family: sans-serif;
 }
 
 body{
@@ -23,6 +48,7 @@ body{
   background-color: rgba(62, 108, 188);
 }
 
+/* texto-em-construcao esta em uso nas paginas comunidades e eventos */
 .texto-em-construcao{
   display: flex;
   justify-content: center;
@@ -70,4 +96,10 @@ body{
 
 .percent-information{
     display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
 }
+
