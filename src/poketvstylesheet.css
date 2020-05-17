@@ -1,48 +1,39 @@
-.imagem-logo{
-    display: flex;
-    justify-content: center;
-  }
-
-  
-body{
-    background-image: url(imagens/background.png);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-color: rgba(62, 108, 188);
-  }
-
-.video{
-    display: flex;
-    justify-content: center;
+.imagem-logo {
+  display: flex;
+  justify-content: center;
 }
 
-.buttons-seasons{
-    display: inline-block
-    
-    
-
+body {
+  background-image: url(imagens/background.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgba(62, 108, 188);
 }
 
-.buttons{
-    display: flex;
-    background-color: #ef4036;
-    padding: 0; 
-    border: 0;
-   
-  }
-  
-  .buttons-content{
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 470;
-    font-size: 19px;
-  }
-  
-  .buttons:hover{
-    background-color: #cc413a;
-  }
+.buttons-seasons {
+  display: inline-block
+}
+
+.buttons {
+  display: flex;
+  background-color: #ef4036;
+  padding: 0;
+  border: 0;
+  justify-content: space-between;
+}
+
+.buttons-content {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 470;
+  font-size: 19px;
+}
+
+.buttons:hover {
+  background-color: #cc413a;
+}
