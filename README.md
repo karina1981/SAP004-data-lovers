@@ -33,7 +33,7 @@ A PokéFun contém duas páginas que estão em construção, a Eventos e Comunid
 
 ## 3. Desenho de Interface
 
-  <img src="img-readme/rascunho1" alt="rascunho" width="200"/>
+  <img src="img_readme/rascunho1.jpeg" alt="rascunho" width="200"/>
   <img src="img-readme/rascunho2" alt="rascunho" width="200"/>
   <img src="img-readme/rascunho3" alt="rascunho" width="200"/>
   <img src="img-readme/rascunho3" alt="rascunho" width="200"/>
