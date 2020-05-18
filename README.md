@@ -1,41 +1,44 @@
-### Data Lovers
+# PokéFun
 
-Decidimos em dupla que o projeto escolhido seria o Pokémon Go, por ser o mais conhecido, e facilitar para ter visão de usuário.
+## Índice
 
-Foi criado um formulário para a coleta de história de usuário.
+- [1. PokéFun](#1-pokéfun)
+- [2. História de Usuários](#2-historias-de-usuario)
+- [3. Desenho de Interface](#3-desenho-de-interface)
+- [4. Teste-de-Usabilidade](#4-teste-de-usabilidade)
+- [5. Autoria e Considerações Finais](#5-autoria-e-consideracoes-finais)
 
-Foi levantado em consideração dados como a necessidade de entrar na página e ser de facil acesso, a localização de pokémons, por tipo, local e horario dos eventos, a conexao com outros usuários, aprender sobre os pokemons lendários, e assistir o seriado.
+---
 
-Com base nos dados colhidos via formulário e nos critério mínimo  de aceitação foi criado os critérios basicos para o usuário criamos o seguinte perfil de usuário.
+## 1. PokéFun
 
-Jovens adultos de 12 à 35 anos que que possui celular androide e internet, com o intuito de, desenvolver sulas habilidades como domador de pokémons, saber onde fica os evendos, ter maior conhecimento sobre os pokémons e onde assistir as series.
+Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones. O jogo é desenvolvido entre a Niantic, Inc., a Nintendo e a The Pokémon Company para as plataformas iOS e Android.O jogo foi lançado em 2016 e oferece uma ecperiência de se tornar um mestre Pokémon. É possível caçar, evoluir, e batalhar com seus Pokémon.
+No projeto Data Lovers, misturamos referências do mundo Pokémon com o jogo.
+Escolhemos Pokémon Go por ser um jogo mundialmente conhecido, sendo assim, poderiamos de certa forma contribuir com a experiência do usuário.
 
-Optamos inicialmente por cinco páginas: home, Pokedéx, Eventos, Comunidade, Onde assistir a série.
+## 2. Histórias de Usuário
 
-### HOME
-Engloba título, texto sobre a página, menu, quatro links para abrir as outras telas, para melhor vizualização do usuário, podendo ser acessada sempre que quiser saber dados acima.
+Em nossa primeira pesquisa, selecionamos as principais necessidades do usuário. Entre elas, visualizar as fraquezas de cada Pokémon. Percebemos algumas outras necessidades, como por exemplo, relembrar a série que deu origem ao jogo. Sendo assim, decidimos criar uma página que contém os links para todas as temporadas da série, a nossa Poké-TV.
 
-Decidimos entregar na primeira sprint a página home, onde irá usar todas as funcionalidades HTML CSS e JavaScript.
+Criamos uma interface que permite:
 
-![Image of page](https://github.com/karina1981/SAP004-data-lovers/blob/master/img_readme/rascunho1.jpeg)
-HOME
+*Visualizar todos os Pokémon da Primeira Geração
+*Visualizar todas as informações importantes de um Pokémon, como seu tipo, fraqueza, quantidade de doces, entre outros.  
+*Buscar um Pokémon por nome
+*Ordenar os Pokémon por ordem alfabética.
+*Visualizar quais Pokémon são de cada tipo
+*Encontrar os links para assistir todas as temporadas de Pokémon
 
-Em primeiro momento foi imaginado uma página limpa onde direcionasse aos outros links de busca.
+A PokéFun contém duas páginas que estão em construção, a Eventos e Comunidade. Em Evento, o usuário poderá se informar sobre os eventos do jogo e em Comunidade poderão visualizar grupos de jogadores por todo mundo.
 
+## 3.Desenho de Interface
 
-![Image of page](https://github.com/karina1981/SAP004-data-lovers/blob/master/img_readme/rascunho2.jpeg)
-EVENTOS
+  <img src="rascunho1" alt="rascunho" width="200"/>
+  <img src="rascunho2" alt="rascunho" width="200"/>
+  <img src="rascunho3" alt="rascunho" width="200"/>
+  <img src="rascunho3" alt="rascunho" width="200"/>
+  <img src="rascunho2" alt="rascunho" width="200"/>
 
-Página onde é possível o usuário localizar novos eventos e batalhas.
+## 4.Teste-de-Usabilidade
 
-![Image of page](https://github.com/karina1981/SAP004-data-lovers/blob/master/img_readme/rascunho3.jpeg)
-COMUNIDADES
-
-
-![Image of page](https://github.com/karina1981/SAP004-data-lovers/blob/master/img_readme/rascunho4.jpeg)
-
-
-![Image of page](https://github.com/karina1981/SAP004-data-lovers/blob/master/img_readme/rascunho5.jpeg)
-POKEDÉX
-
-
+## 5.Autoria e Condiderações Finais
