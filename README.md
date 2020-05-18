@@ -12,13 +12,15 @@
 
 ## 1. PokéFun
 
-Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones. O jogo é desenvolvido entre a Niantic, Inc., a Nintendo e a The Pokémon Company para as plataformas iOS e Android.O jogo foi lançado em 2016 e oferece uma experiência de se tornar um mestre Pokémon. É possível caçar, evoluir, e batalhar com seus Pokémon.
-No projeto Data Lovers, misturamos referências do mundo Pokémon com o jogo.
+Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones. O jogo é desenvolvido entre a Niantic, Inc., a Nintendo e a The Pokémon Company para as plataformas iOS e Android.O jogo foi lançado em 2016 e oferece uma experiência de se tornar um mestre Pokémon.<br>
+É possível caçar, evoluir, e batalhar com seus Pokémon.
+No projeto Data Lovers, misturamos referências do mundo Pokémon com o jogo.<br>
 Escolhemos Pokémon Go por ser um jogo mundialmente conhecido, sendo assim, poderiamos de certa forma contribuir com a experiência do usuário.
 
 ## 2. Histórias de Usuário
 
-Em nossa primeira pesquisa, selecionamos as principais necessidades do usuário. Entre elas, visualizar as fraquezas de cada Pokémon. Percebemos algumas outras necessidades, como por exemplo, relembrar a série que deu origem ao jogo. Sendo assim, decidimos criar uma página que contém os links para todas as temporadas da série, a nossa Poké-TV.
+Em nossa primeira pesquisa, selecionamos as principais necessidades do usuário. Entre elas, visualizar as fraquezas de cada Pokémon. <br>
+Percebemos algumas outras necessidades, como por exemplo, relembrar a série que deu origem ao jogo. Sendo assim, decidimos criar uma página que contém os links para todas as temporadas da série, a nossa Poké-TV.
 
 <b>Criamos uma interface que permite:</b>
 
