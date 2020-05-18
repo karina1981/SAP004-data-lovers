@@ -20,27 +20,27 @@ Escolhemos Pokémon Go por ser um jogo mundialmente conhecido, sendo assim, pode
 
 Em nossa primeira pesquisa, selecionamos as principais necessidades do usuário. Entre elas, visualizar as fraquezas de cada Pokémon. Percebemos algumas outras necessidades, como por exemplo, relembrar a série que deu origem ao jogo. Sendo assim, decidimos criar uma página que contém os links para todas as temporadas da série, a nossa Poké-TV.
 
-Criamos uma interface que permite:
+<b>Criamos uma interface que permite:<b>
 
--Visualizar todos os Pokémon da Primeira Geração.
--Visualizar todas as informações importantes de um Pokémon, como seu tipo, fraqueza, quantidade de doces, entre outros.  
--Buscar um Pokémon por nome.
--Ordenar os Pokémon por ordem alfabética.
--Visualizar quais Pokémon são de cada tipo.
--Encontrar os links para assistir todas as temporadas de Pokémon.
+<li>Visualizar todos os Pokémon da Primeira Geração.</li><br>
+<li>Visualizar todas as informações importantes de um Pokémon, como seu tipo, fraqueza, quantidade de doces, entre outros.</li> <br>
+<li>Buscar um Pokémon por nome.</li> <br>
+<li>Ordenar os Pokémon por ordem alfabética.</li><br>
+<li>Visualizar quais Pokémon são de cada tipo.</li><br>
+<li>Encontrar os links para assistir todas as temporadas de Pokémon.</li><br>
 
 A PokéFun contém duas páginas que estão em construção, a Eventos e Comunidade. Em Evento, o usuário poderá se informar sobre os eventos do jogo e em Comunidade poderão visualizar grupos de jogadores por todo mundo.
 
 ## 3. Desenho de Interface
 
-### Protótipo de baixa fidelidade - Papel
+<b>Protótipo de baixa fidelidade - Papel<b>
 
 Primeiro, fizemos o protótio de baixa fidelidade, no papel. Nele, desenhamos as páginas que gostaríamos de fazer. Chegamos a conclusão que seria interessante ter uma Home, para informar o usuário sobre cada página. 
 
   <img src="img_readme/rascunho1.jpeg" alt="rascunho" width="300"/>
   <img src="img_readme/rascunho5.jpeg" alt="rascunho" width="300"/>
 
-### Protótipo de média fidelidade - Photoshop
+ Protótipo de média fidelidade - Photoshop
 
 Posteriormente, fizemos o teste de média fidelidade no Photoshop, já com a proposta de interface mais fiel a que gostaríamos de desenvolver. <br>
 
