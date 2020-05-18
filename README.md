@@ -36,7 +36,7 @@ A PokéFun contém duas páginas que estão em construção, a Eventos e Comunid
   <img src="img_readme/rascunho1.jpeg" alt="rascunho" width="240"/>
   <img src="img_readme/rascunho5.jpeg" alt="rascunho" width="240"/>
 
-  <img src="img_readme/paginaprincipal.png" alt="protótipo" width="250"/>
+  <img src="img_readme/paginaprincipal.jpg" alt="protótipo" width="250"/>
   <img src="img_readme/POKELIST.jpg" alt="protótipo" width="250"/>
   
 ## 4. Teste de Usabilidade
