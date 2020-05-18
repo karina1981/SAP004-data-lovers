@@ -35,7 +35,7 @@ pokeData.map(drawCard);
 function filterType() {
   const selectedType = document.getElementById("select-type").value
 
-  const filteredData = search.filterData(pokeData, { 'key': 'type', 'value': selectedType})
+  const filteredData = search.filterData(pokeData, { 'key': 'type', 'value': selectedType })
 
   rootElement.innerHTML = '' //apaga todos os 151 cards que estavam aparecendo.
   filteredData.map(drawCard) //mapea os pokemons filtrados e chama a função drawCard, que gera o card.
@@ -44,7 +44,7 @@ function filterType() {
   const finalPercentage = search.computeStats(pokeData, selectedType)
 
   percentElement.innerHTML = `${finalPercentage}% dos Pokémon são do tipo ${selectedType}`
-  
+
   limparCaixaPesquisa()
   limparOrder()
 
@@ -100,8 +100,7 @@ document.getElementById("search-box").addEventListener("input", filterSearchBox)
 
 //-----------modal-----------
 let closeModal = (event) => {
-  console.log(event.target.className)
-  if (event.target.className == "modal_background" || event.target.className == "buttonCloseModal"){
+  if (event.target.className == "modal_background" || event.target.className == "buttonCloseModal") {
     document.querySelector(".modal_background").style.display = "none"
   }
 }
@@ -109,7 +108,7 @@ document.querySelector(".modal_background").addEventListener("click", closeModal
 
 document.querySelector(".buttonCloseModal").addEventListener("click", closeModal);
 
-document.getElementById("root").addEventListener("click", (event) => { 
+document.getElementById("root").addEventListener("click", (event) => {
 
   if (event.target) {
     let target = event.target;
@@ -118,8 +117,7 @@ document.getElementById("root").addEventListener("click", (event) => {
       if (obj.className == 'pokecard') {
 
         let pokemon = JSON.parse(obj.getAttribute('data-pokemon'));
-        
-        console.log('setPokecardDetails', pokemon);
+
 
         let detailPokemon = `<div class="pokeimg-modal">
             <img class='miniaturaPokemon-modal' src="${pokemon.img}" alt ='miniatura pokemon'>
@@ -138,10 +136,9 @@ document.getElementById("root").addEventListener("click", (event) => {
             Multiplicadores: ${pokemon.multipliers} <br>
             Weaknesses: ${pokemon.weaknesses} <br>
           </div>`;
-console.log("detailPokemon")
         let modal_background = document.querySelector('.modal_background');
-        modal_background.style.display = 
-        'flex'
+        modal_background.style.display =
+          'flex'
 
         let modalContent = document.querySelector('.modal_pokemon_content');
         modalContent.innerHTML = detailPokemon;
@@ -169,8 +166,8 @@ console.log("detailPokemon")
 
 const listTypes = (pokeList) => {
   let pokeAllTypes = {}
-  for (let i = 0; i < pokeList.length; i++){
-    for (let j = 0; j < pokeList[i].type.length; j++){
+  for (let i = 0; i < pokeList.length; i++) {
+    for (let j = 0; j < pokeList[i].type.length; j++) {
       let type = pokeList[i].type[j];
       pokeAllTypes[type] = type;
     }
