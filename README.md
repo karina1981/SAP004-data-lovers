@@ -12,7 +12,7 @@
 
 ## 1. PokéFun
 
-Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones. O jogo é desenvolvido entre a Niantic, Inc., a Nintendo e a The Pokémon Company para as plataformas iOS e Android.O jogo foi lançado em 2016 e oferece uma ecperiência de se tornar um mestre Pokémon. É possível caçar, evoluir, e batalhar com seus Pokémon.
+Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones. O jogo é desenvolvido entre a Niantic, Inc., a Nintendo e a The Pokémon Company para as plataformas iOS e Android.O jogo foi lançado em 2016 e oferece uma experiência de se tornar um mestre Pokémon. É possível caçar, evoluir, e batalhar com seus Pokémon.
 No projeto Data Lovers, misturamos referências do mundo Pokémon com o jogo.
 Escolhemos Pokémon Go por ser um jogo mundialmente conhecido, sendo assim, poderiamos de certa forma contribuir com a experiência do usuário.
 
@@ -22,30 +22,33 @@ Em nossa primeira pesquisa, selecionamos as principais necessidades do usuário.
 
 Criamos uma interface que permite:
 
-*Visualizar todos os Pokémon da Primeira Geração
-*Visualizar todas as informações importantes de um Pokémon, como seu tipo, fraqueza, quantidade de doces, entre outros.  
-*Buscar um Pokémon por nome
-*Ordenar os Pokémon por ordem alfabética.
-*Visualizar quais Pokémon são de cada tipo
-*Encontrar os links para assistir todas as temporadas de Pokémon
+-Visualizar todos os Pokémon da Primeira Geração.
+-Visualizar todas as informações importantes de um Pokémon, como seu tipo, fraqueza, quantidade de doces, entre outros.  
+-Buscar um Pokémon por nome.
+-Ordenar os Pokémon por ordem alfabética.
+-Visualizar quais Pokémon são de cada tipo.
+-Encontrar os links para assistir todas as temporadas de Pokémon.
 
 A PokéFun contém duas páginas que estão em construção, a Eventos e Comunidade. Em Evento, o usuário poderá se informar sobre os eventos do jogo e em Comunidade poderão visualizar grupos de jogadores por todo mundo.
 
 ## 3. Desenho de Interface
 
 ### Protótipo de baixa fidelidade - Papel
+
 Primeiro, fizemos o protótio de baixa fidelidade, no papel. Nele, desenhamos as páginas que gostaríamos de fazer. Chegamos a conclusão que seria interessante ter uma Home, para informar o usuário sobre cada página. 
 
-  <img src="img_readme/rascunho1.jpeg" alt="rascunho" width="240"/>
-  <img src="img_readme/rascunho5.jpeg" alt="rascunho" width="240"/>
+  <img src="img_readme/rascunho1.jpeg" alt="rascunho" width="300"/>
+  <img src="img_readme/rascunho5.jpeg" alt="rascunho" width="300"/>
 
 ### Protótipo de média fidelidade - Photoshop
-Posteriormente, fizemos o teste de média fidelidade no Photoshop, já com a proposta de interface mais fiel a que gostaríamos de desenvolver. 
-  <img src="img_readme/paginaprincipal.jpg" alt="protótipo" width="250"/>
-  <img src="img_readme/POKELIST.jpg" alt="protótipo" width="250"/>
+
+Posteriormente, fizemos o teste de média fidelidade no Photoshop, já com a proposta de interface mais fiel a que gostaríamos de desenvolver. <br>
+
+  <img src="img_readme/paginaprincipal.jpg" alt="protótipo" width="300"/>
+  <img src="img_readme/POKELIST.jpg" alt="protótipo" width="300"/>
 
 ## 4. Teste de Usabilidade
 Durante a criação do projeto fizemos teste de usabilidade com os usuários. No teste, o principal problema detectado foi a falta de um botão para voltar para a Home ou ir para as outras páginas. Assim, decidimos criar o menu hamburger. 
 
 ## 5. Autoria
-Esse projeto foi desenvolvido em dupla por Jessica Brunhara e Karina Pereira como parte do bootcamp <Laboratoria>. Foi um grande aprendizado, crescemos muito como profissionais! 
+Esse projeto foi desenvolvido em dupla por Jessica Brunhara e Karina Pereira como parte do bootcamp < Laboratoria >. Foi um grande aprendizado, crescemos muito como profissionais! 
