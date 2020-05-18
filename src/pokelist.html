@@ -7,13 +7,42 @@
   <title>PokeList</title>
   <link rel="stylesheet" href="secondstylesheet.css" />
   <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <header>
+    <div id="top-menu-wrapper">
+      <div id="top-menu-icon">
+        <a href="javascript:void(0);" class="icon" id="menu-icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <div id="navigation-wrapper" class="disable-display">
+        <div id="close-menu-icon-wrapper">
+          <a href="javascript:void(0);" class="icon" id="close-menu-icon">
+            <i class="fa fa-times"></i>
+          </a>
+        </div>
+        <nav id="top-menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="poketv.html">Poké-TV</a>
+          </li>
+          <li>
+            <a href="eventos.html">Eventos</a>
+          </li>
+          <li>
+            <a href="comunidade.html">Comunidade</a>
+          </li>
+        </nav>
+      </div>
+
     <div class="imagem-logo">
-      <img src="imagens/logopokefun.png" alt="logo pokefun" width="350" height="130">
+      <img src="imagens/logopokefun.png" alt="logo pokefun">
     </div>
   </header>
 
@@ -54,6 +83,7 @@
   <div id="root"></div>
 
   <script src="main.js" type="module"></script>
+  <script src="hamburgermenu.js" type="module"></script>
 
 </body>
 

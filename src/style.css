@@ -60,7 +60,7 @@ body {
 p{
   padding: 10px;
   margin: 0;
-  background-color: rgb(243, 243, 243, 35%);
+  background-color: rgb(243, 243, 243, 60%);
 }
 
 @media (max-width: 850px)

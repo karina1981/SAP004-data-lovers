@@ -92,11 +92,13 @@ function limparFiltrarTipo() {
   document.getElementById("select-type").value = ""
 }
 
+
 //verificando eventos
 document.getElementById("select-type").addEventListener("change", filterType);
 document.getElementById("order-by-alphabet").addEventListener("change", OrderByAlphabet);
 document.getElementById("search-box").addEventListener("input", filterSearchBox);
 
+//-----------modal-----------
 let closeModal = (event) => {
   console.log(event.target.className)
   if (event.target.className == "modal_background" || event.target.className == "buttonCloseModal"){
@@ -182,3 +184,4 @@ for (let k = 0; k < listType.length; k++) {
   let opcao = new Option(listType[k].toUpperCase(), listType[k])
   selectType.add(opcao)
 }
+
