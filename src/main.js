@@ -128,13 +128,13 @@ document.getElementById("root").addEventListener("click", (event) => {
             Tamanho: ${pokemon.height} <br>
             Peso: ${pokemon.weight} <br>
             Doces: ${pokemon.candy} <br>
-            Quantidade de Doces ${pokemon.candy_count} <br>
-            Choca em ovo ${pokemon.egg} <br>
-            Chance de Aparecer ${pokemon.spawn_chance} <br>
-            Média de Desova ${pokemon.avg_spawns} <br>
-            Tempo de Desova${pokemon.spawn_time} <br>
-            Multiplicadores ${pokemon.multipliers} <br>
-            Weaknesses ${pokemon.weaknesses} <br>
+            Quantidade de Doces: ${pokemon.candy_count} <br>
+            Choca em ovo: ${pokemon.egg} <br>
+            Chance de Aparecer: ${pokemon.spawn_chance} <br>
+            Média de Desova: ${pokemon.avg_spawns} <br>
+            Tempo de Desova: ${pokemon.spawn_time} <br>
+            Multiplicadores: ${pokemon.multipliers} <br>
+            Weaknesses: ${pokemon.weaknesses} <br>
           </div>`;
 console.log("detailPokemon")
         let modal_background = document.querySelector('.modal_background');
@@ -155,3 +155,30 @@ console.log("detailPokemon")
 
   }
 });
+
+//função para deixar o select dinamico
+
+// criar uma função, que tem um parametro de entrada que é uma lista de pokemon
+// criar uma variável que vai guardar todos tipos de pokemon que existir na lista de pokemons 
+// percorrer a lista de pokemons e add na variavel tipos de pokemon os tipos que encontrar nesta lista
+// retornar a variável lista de pokemons
+// criar uma variável que armazena o html select
+// pecorrer a lista de tipos de pokemon e add option aos select
+
+const listTypes = (pokeList) => {
+  let pokeAllTypes = {}
+  for (let i = 0; i < pokeList.length; i++){
+    for (let j = 0; j < pokeList[i].type.length; j++){
+      let type = pokeList[i].type[j];
+      pokeAllTypes[type] = type;
+    }
+  }
+  return pokeAllTypes;
+}
+
+let selectType = document.querySelector("#select-type")
+let listType = Object.keys(listTypes(pokeData));
+for (let k = 0; k < listType.length; k++) {
+  let opcao = new Option(listType[k].toUpperCase(), listType[k])
+  selectType.add(opcao)
+}

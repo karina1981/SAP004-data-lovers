@@ -96,7 +96,7 @@ body{
 
 .percent-information{
     display: flex;
-   justify-content: center;
+    justify-content: center;
     text-align: center;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -152,5 +152,4 @@ body{
 .miniaturaPokemon-modal{
   width: 262px;
 }
-
 
