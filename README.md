@@ -12,7 +12,7 @@
 
 ## 1. PokéFun
 
-Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones. O jogo é desenvolvido entre a Niantic, Inc., a Nintendo e a The Pokémon Company para as plataformas iOS e Android.O jogo foi lançado em 2016 e oferece uma experiência de se tornar um mestre Pokémon.<br>
+Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones. O jogo é desenvolvido entre a Niantic, Inc., a Nintendo e a The Pokémon Company para as plataformas iOS e Android. O jogo foi lançado em 2016 e oferece uma experiência de se tornar um mestre Pokémon.<br>
 É possível caçar, evoluir, e batalhar com seus Pokémon.
 No projeto Data Lovers, misturamos referências do mundo Pokémon com o jogo.<br>
 Escolhemos Pokémon Go por ser um jogo mundialmente conhecido, sendo assim, poderiamos de certa forma contribuir com a experiência do usuário.
@@ -52,5 +52,5 @@ Posteriormente, fizemos o teste de média fidelidade no Photoshop, já com a pro
 ## 4. Teste de Usabilidade
 Durante a criação do projeto fizemos teste de usabilidade com os usuários. No teste, o principal problema detectado foi a falta de um botão para voltar para a Home ou ir para as outras páginas. Assim, decidimos criar o menu hamburger. 
 
-## 5. Autoria
+## 5. Autoria e Considerações Finais
 Esse projeto foi desenvolvido em dupla por Jessica Brunhara e Karina Pereira como parte do bootcamp < Laboratoria >. Foi um grande desafio que trouxe um grande aprendizado!
