@@ -31,14 +31,14 @@ Criamos uma interface que permite:
 
 A PokéFun contém duas páginas que estão em construção, a Eventos e Comunidade. Em Evento, o usuário poderá se informar sobre os eventos do jogo e em Comunidade poderão visualizar grupos de jogadores por todo mundo.
 
-## 3.Desenho de Interface
+## 3. Desenho de Interface
 
-  <img src="rascunho1" alt="rascunho" width="200"/>
-  <img src="rascunho2" alt="rascunho" width="200"/>
-  <img src="rascunho3" alt="rascunho" width="200"/>
-  <img src="rascunho3" alt="rascunho" width="200"/>
-  <img src="rascunho2" alt="rascunho" width="200"/>
+  <img src="img-readme/rascunho1" alt="rascunho" width="200"/>
+  <img src="img-readme/rascunho2" alt="rascunho" width="200"/>
+  <img src="img-readme/rascunho3" alt="rascunho" width="200"/>
+  <img src="img-readme/rascunho3" alt="rascunho" width="200"/>
+  <img src="img-readme/rascunho2" alt="rascunho" width="200"/>
 
-## 4.Teste-de-Usabilidade
+## 4. Teste-de-Usabilidade
 
-## 5.Autoria e Condiderações Finais
+## 5. Autoria e Condiderações Finais
