@@ -20,14 +20,14 @@ Escolhemos Pokémon Go por ser um jogo mundialmente conhecido, sendo assim, pode
 
 Em nossa primeira pesquisa, selecionamos as principais necessidades do usuário. Entre elas, visualizar as fraquezas de cada Pokémon. Percebemos algumas outras necessidades, como por exemplo, relembrar a série que deu origem ao jogo. Sendo assim, decidimos criar uma página que contém os links para todas as temporadas da série, a nossa Poké-TV.
 
-<b>Criamos uma interface que permite:<b>
+<b>Criamos uma interface que permite:</b>
 
 <li>Visualizar todos os Pokémon da Primeira Geração.</li><br>
 <li>Visualizar todas as informações importantes de um Pokémon, como seu tipo, fraqueza, quantidade de doces, entre outros.</li> <br>
 <li>Buscar um Pokémon por nome.</li> <br>
 <li>Ordenar os Pokémon por ordem alfabética.</li><br>
 <li>Visualizar quais Pokémon são de cada tipo.</li><br>
-<li>Encontrar os links para assistir todas as temporadas de Pokémon.</li><br>
+<li>Encontrar os links para assistir todas as temporadas de Pokémon.</li> <br>
 
 A PokéFun contém duas páginas que estão em construção, a Eventos e Comunidade. Em Evento, o usuário poderá se informar sobre os eventos do jogo e em Comunidade poderão visualizar grupos de jogadores por todo mundo.
 
