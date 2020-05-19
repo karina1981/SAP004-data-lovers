@@ -12,12 +12,13 @@ const pokeCard = function (pokemon) {
   let pokemonStringFy = JSON.stringify(pokemon);
   return `<div class="pokecard" data-pokemon='${pokemonStringFy}'>
             <div class="pokeimg">
+              ${pokemon.num} <br>
               <img class='miniaturaPokemon' src="${pokemon.img}" alt ='miniatura pokemon'>
             </div>
-            <div class='pokelist'> 
+            <div class='pokelist'>
               Nome: ${pokemon.name} <br>
               Tipo: ${pokemon.type} <br>
-              Weaknesses: ${pokemon.weaknesses}
+              
             </div>
           </div>`
 };
@@ -100,7 +101,7 @@ document.getElementById("search-box").addEventListener("input", filterSearchBox)
 
 //-----------modal-----------
 let closeModal = (event) => {
-  console.log(event.target.className)
+
   if (event.target.className == "modal_background" || event.target.className == "buttonCloseModal"){
     document.querySelector(".modal_background").style.display = "none"
   }
@@ -119,8 +120,6 @@ document.getElementById("root").addEventListener("click", (event) => {
 
         let pokemon = JSON.parse(obj.getAttribute('data-pokemon'));
         
-        console.log('setPokecardDetails', pokemon);
-
         let detailPokemon = `<div class="pokeimg-modal">
             <img class='miniaturaPokemon-modal' src="${pokemon.img}" alt ='miniatura pokemon'>
           </div>
@@ -138,7 +137,7 @@ document.getElementById("root").addEventListener("click", (event) => {
             Multiplicadores: ${pokemon.multipliers} <br>
             Weaknesses: ${pokemon.weaknesses} <br>
           </div>`;
-console.log("detailPokemon")
+
         let modal_background = document.querySelector('.modal_background');
         modal_background.style.display = 
         'flex'

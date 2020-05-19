@@ -44,7 +44,7 @@
   font-size: 25px;
   list-style: none;
   border-bottom: 1px solid black;
-  margin: 20px 0px 20px 0px;
+  margin: 50px 0px 20px 0px;
   padding: 0px 10px 0px 10px;
 }
 
@@ -65,8 +65,8 @@
 }
 
 .imagem-logo img{
- width: 350px;
- height: 130px;
+  width: 350px;
+  height: 130px;
 }
 
 .barra-navegacao{
@@ -138,7 +138,6 @@ body{
   font-size: 19px;
   width: 15%;
   min-height: 235px;
-  float: left;
   margin: 10px;
   padding: 1em 1em 2em 2em;
 }
@@ -157,6 +156,13 @@ body{
   background-size: 150%;
   /* color: #FFD700; */
 }
+
+  .miniaturaPokemon:hover {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  }
 
 .percent-information{
     display: flex;
@@ -199,11 +205,14 @@ body{
 }
 .pokeimg-modal{
   z-index: 999;
+  top: -44px;
+  display: block;
+  position: relative;
 }
 
 .pokelist-modal{
   width: 12%;
-  background: rgba(164, 10, 10, 0.5);
+  background: rgba(239, 64, 54, 0.8);
   border-radius: 10px;
   padding: 1.4em;
   line-height: 1em;
@@ -217,3 +226,47 @@ body{
   width: 262px;
 }
 
+#root{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media (max-width: 376px)
+{
+  .barra-navegacao {
+    flex-wrap: wrap;
+    margin-top: 110px;
+  }
+  .btn-space {
+    margin: 0.4em;
+  }
+
+  #top-menu-wrapper{
+    position: fixed;
+    margin-top: -110px;
+  }
+
+  .imagem-logo img{
+    width: 245px;
+    height: 89px;
+  }
+
+  .pokecard{
+    width: 50%;
+  }
+
+  .pokelist-modal {
+    width: 56%;
+    left: 56px;
+    top: 337px;
+  }
+
+
+  .modal_background .modal_pokemon {
+    top: -74px;
+    position: relative;
+  }
+}
