@@ -12,12 +12,13 @@ const pokeCard = function (pokemon) {
   let pokemonStringFy = JSON.stringify(pokemon);
   return `<div class="pokecard" data-pokemon='${pokemonStringFy}'>
             <div class="pokeimg">
+              ${pokemon.num} <br>
               <img class='miniaturaPokemon' src="${pokemon.img}" alt ='miniatura pokemon'>
             </div>
-            <div class='pokelist'> 
+            <div class='pokelist'>
               Nome: ${pokemon.name} <br>
               Tipo: ${pokemon.type} <br>
-              Weaknesses: ${pokemon.weaknesses}
+              
             </div>
           </div>`
 };
@@ -117,8 +118,6 @@ document.getElementById("root").addEventListener("click", (event) => {
       if (obj.className == 'pokecard') {
 
         let pokemon = JSON.parse(obj.getAttribute('data-pokemon'));
-
-
         let detailPokemon = `<div class="pokeimg-modal">
             <img class='miniaturaPokemon-modal' src="${pokemon.img}" alt ='miniatura pokemon'>
           </div>

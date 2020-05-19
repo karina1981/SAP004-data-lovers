@@ -62,7 +62,7 @@ p{
   background-color: rgb(243, 243, 243, 60%);
 }
 
-@media (max-width: 850px)
+/* @media (max-width: 850px)
 {
   .buttons-container{
     display: grid;
@@ -81,4 +81,27 @@ p{
     font-size: 1em;
     font-weight: 400;
   }
+} */
+
+/* home tablet deitado */
+@media (max-width: 376px)
+{
+  .botoes-todos{
+    display: flex;
+  }
+
+  .buttons{
+    margin: 0.4em;
+    width: 100px;
+  }
+
+.logo img {
+  width: 82%;
+  height: 110px;
+  }
+
+  .texto{
+    font-size: 1.6em;
+  }
+
 }
