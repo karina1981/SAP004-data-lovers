@@ -1,9 +1,10 @@
+/* menu hamburger */
 #top-menu-wrapper {
   display: flex;
   padding: 20px;
 }
 
-.icon{
+.icon {
   color: #ef4036;
   font-size: 50px;
   flex: 0;
@@ -14,7 +15,7 @@
   padding: 20px;
 }
 
-#top-menu-icon{
+#top-menu-icon {
   padding: 0px 0px 0px 0px;
 }
 
@@ -24,7 +25,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#navigation-wrapper{
+#navigation-wrapper {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -61,7 +62,9 @@
   margin-bottom: 0px;
 }
 
-.imagem-logo{
+/* fim menu hamburger */
+
+.imagem-logo {
   display: flex;
   justify-content: center;
   padding: 0px 10px 10px 10px;
@@ -69,9 +72,9 @@
   flex: 10;
 }
 
-.imagem-logo img{
- width: 350px;
- height: 130px;
+.imagem-logo img {
+  width: 350px;
+  height: 130px;
 }
 
 body {
@@ -83,10 +86,14 @@ body {
   background-color: rgba(62, 108, 188);
 }
 
+/* container botão */
+
 .buttons-seasons {
-  display: block;
-  margin: 80px  150px 30px 150px;
-  
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  flex-flow: row wrap;
 }
 
 .buttons {
@@ -106,21 +113,49 @@ body {
   font-size: 19px;
   font-weight: 500;
   color: aliceblue;
-   
 }
 
 .buttons:hover {
   background-color: #cc413a;
 }
 
-.video{
+/* fim botões */
+
+/* video container */
+
+.video {
   display: flex;
   justify-content: center;
   margin: 30px;
 }
 
+.video1 {
+  width: 500px;
+  height: 315px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-items: center;
+}
 
-.texto-box{
+.img-tv {
+  display: grid;
+  grid-template-columns: 9% 71% 20%;
+  grid-template-rows: 30% 50% 20%;
+  background-image: url(imagens/poketv.png);
+  width: 700px;
+  height: 600px;
+  background-size: 700px 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*fim video*/
+
+/* texto */
+
+.texto-box {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -129,11 +164,45 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #606163;
   padding: 10px 5px 5px 5px;
-  margin: 10px 0 10px 0;
+  margin: 10px 0px 40px 0px;
 }
 
-.text-information{
-  padding: 20px 20px 20px 20px;
+.text-information {
+  padding: 30px 30px 40px 30px;
   margin: 40px 0px 0px 0px;
   background-color: rgb(243, 243, 243, 80%);
+  border-radius: 50%;
+}
+
+@media (max-width: 850px) {
+  .img-tv {
+    display: flex;
+    justify-content: center;
+    background-image: none;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+
+  .img-tv iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .buttons-seasons{
+    max-width: 400px;
+  }
+   
+ .imagem-logo img{
+   max-width: 100%;
+   height: auto;
+  }
+
+  .icon {
+    font-size: 30px;
+  }
+
 }

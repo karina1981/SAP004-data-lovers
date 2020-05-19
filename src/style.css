@@ -4,8 +4,7 @@
 }
 
 .logo img {
-  width: 450px;
-  height: 180px;
+  max-width: 450px;
 }
 
 body {
@@ -17,7 +16,7 @@ body {
   background-color: rgba(62, 108, 188);
 }
 
-.botoes-todos{
+.buttons-container{
   display: flex;
   justify-content: space-evenly;
   margin: 30px 0px 40px 0;
@@ -45,7 +44,7 @@ body {
   background-color:  #2a5293;
 }
 
-.texto{
+.text{
   display: flex;
   justify-content: center;
   text-align: center;
@@ -65,7 +64,7 @@ p{
 
 @media (max-width: 850px)
 {
-  .botoes-todos{
+  .buttons-container{
     display: grid;
   }
 
@@ -73,11 +72,13 @@ p{
     margin: 0.4em;
   }
 
-.logo img {
-  width: 80%;
+  .logo img {
+  max-width: 80%;
+  height: auto;
   }
 
-  .texto{
-    font-size: 1.6em;
+  .text{
+    font-size: 1em;
+    font-weight: 400;
   }
 }
