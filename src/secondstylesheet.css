@@ -140,6 +140,7 @@ body {
   min-height: 235px;
   margin: 10px;
   padding: 1em 1em 2em 2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .pokelist {
@@ -148,7 +149,7 @@ body {
   width: 80%;
   float: left;
   padding: 1em;
-  background: rgba(99, 99, 99, 0.7);
+  background:  rgba(42, 82, 147, 80%); /* mudei essa cor pra conversar melhor com a nossa cartela*/
 }
 
 .pokecard:hover {
@@ -186,6 +187,8 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(99, 99, 99, 0.5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*jessica: mudei a fonte */
+  
 }
 
 .modal_background .modal_pokemon {
@@ -210,22 +213,24 @@ body {
   top: -44px;
   display: block;
   position: relative;
+  padding-left: 20px; /*jessica: coloquei padding pois a imagem do pokemon cobre o texto */
 }
 
 .pokelist-modal {
   width: 12%;
-  background: rgba(239, 64, 54, 0.8);
+  background: rgba(239, 64, 54, 0.9);
   border-radius: 10px;
   padding: 1.4em;
   line-height: 1em;
   display: block;
-  color: white;
+  color: whitesmoke;
   position: absolute;
   left: 31%;
+  padding-right: 20px; /* jessica: tentando encaixar a imagem pra fora do texto*/
 }
 
 .miniaturaPokemon-modal {
-  width: 262px;
+  width: 242px; /*diminui 20px da imagem, pois alguns pokemons estavam saindo da bola aberta*/
 }
 
 #root{
