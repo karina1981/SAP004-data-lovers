@@ -125,16 +125,42 @@ document.getElementById("root").addEventListener("click", (event) => {
             <b>Nome</b>: ${pokemon.name} <br>
             <b>Tipo</b>: ${pokemon.type} <br>
             <b>Tamanho</b>: ${pokemon.height} <br>
-            <b>Peso</b>: ${pokemon.weight} <br>
-            <b>Doces</b>: ${pokemon.candy} <br>
-            <b>Quantidade de Doces</b>: ${pokemon.candy_count} <br>
-            <b>Choca em ovo</b>: ${pokemon.egg} <br>
-            <b>Chance de Aparecer</b>: ${pokemon.spawn_chance} <br>
-            <b>Média de Desova</b>: ${pokemon.avg_spawns} <br>
-            <b>Tempo de Desova</b>: ${pokemon.spawn_time} <br>
-            <b>Multiplicadores</b>: ${pokemon.multipliers} <br>
-            <b>Weaknesses</b>: ${pokemon.weaknesses} <br>
-          </div>`;
+            <b>Peso</b>: ${pokemon.weight} <br>`;
+
+        if (pokemon.candy) {
+          detailPokemon += `<b>Doces</b>: ${pokemon.candy} <br>`
+        }
+
+        if (pokemon.candy_cont) {
+          detailPokemon += `<b>Quantidade de Doces</b>: ${pokemon.candy_count} <br>`
+        }
+
+        if (pokemon.egg) {
+          detailPokemon += `<b>Choca em ovo</b>: ${pokemon.egg} <br>`
+        }
+
+        if (pokemon.spawn_chance) {
+          detailPokemon += `<b>Chance de Aparecer</b>: ${pokemon.spawn_chance} <br>`
+        }
+
+        if (pokemon.avg_spawns) {
+          detailPokemon += `<b>Média de Desova</b>: ${pokemon.avg_spawns} <br>`
+        }
+
+        if (pokemon.spawn_time) {
+          detailPokemon += `<b>Tempo de Desova</b>: ${pokemon.spawn_time} <br>`
+        }
+
+        if (pokemon.multipliers) {
+          detailPokemon += `<b>Multiplicadores</b>: ${pokemon.multipliers} <br>`
+        }
+
+        if (pokemon.weaknesses) {
+          detailPokemon += `<b>Weaknesses</b>: ${pokemon.weaknesses} <br>`
+        }
+
+        detailPokemon += `</div>`;
+
         let modal_background = document.querySelector('.modal_background');
         modal_background.style.display =
           'flex'
