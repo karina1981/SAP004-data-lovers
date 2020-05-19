@@ -16,8 +16,8 @@ const pokeCard = function (pokemon) {
               <img class='miniaturaPokemon' src="${pokemon.img}" alt ='miniatura pokemon'>
             </div>
             <div class='pokelist'>
-              Nome: ${pokemon.name} <br>
-              Tipo: ${pokemon.type} <br>
+              <b>Nome</b>: ${pokemon.name} <br>
+              <b>Tipo</b>: ${pokemon.type} <br>
               
             </div>
           </div>`
@@ -122,19 +122,45 @@ document.getElementById("root").addEventListener("click", (event) => {
             <img class='miniaturaPokemon-modal' src="${pokemon.img}" alt ='miniatura pokemon'>
           </div>
           <div class='pokelist-modal'> 
-            Nome: ${pokemon.name} <br>
-            Tipo: ${pokemon.type} <br>
-            Tamanho: ${pokemon.height} <br>
-            Peso: ${pokemon.weight} <br>
-            Doces: ${pokemon.candy} <br>
-            Quantidade de Doces: ${pokemon.candy_count} <br>
-            Choca em ovo: ${pokemon.egg} <br>
-            Chance de Aparecer: ${pokemon.spawn_chance} <br>
-            Média de Desova: ${pokemon.avg_spawns} <br>
-            Tempo de Desova: ${pokemon.spawn_time} <br>
-            Multiplicadores: ${pokemon.multipliers} <br>
-            Weaknesses: ${pokemon.weaknesses} <br>
-          </div>`;
+            <b>Nome</b>: ${pokemon.name} <br>
+            <b>Tipo</b>: ${pokemon.type} <br>
+            <b>Tamanho</b>: ${pokemon.height} <br>
+            <b>Peso</b>: ${pokemon.weight} <br>`;
+
+        if (pokemon.candy) {
+          detailPokemon += `<b>Doces</b>: ${pokemon.candy} <br>`
+        }
+
+        if (pokemon.candy_cont) {
+          detailPokemon += `<b>Quantidade de Doces</b>: ${pokemon.candy_count} <br>`
+        }
+
+        if (pokemon.egg) {
+          detailPokemon += `<b>Choca em ovo</b>: ${pokemon.egg} <br>`
+        }
+
+        if (pokemon.spawn_chance) {
+          detailPokemon += `<b>Chance de Aparecer</b>: ${pokemon.spawn_chance} <br>`
+        }
+
+        if (pokemon.avg_spawns) {
+          detailPokemon += `<b>Média de Desova</b>: ${pokemon.avg_spawns} <br>`
+        }
+
+        if (pokemon.spawn_time) {
+          detailPokemon += `<b>Tempo de Desova</b>: ${pokemon.spawn_time} <br>`
+        }
+
+        if (pokemon.multipliers) {
+          detailPokemon += `<b>Multiplicadores</b>: ${pokemon.multipliers} <br>`
+        }
+
+        if (pokemon.weaknesses) {
+          detailPokemon += `<b>Weaknesses</b>: ${pokemon.weaknesses} <br>`
+        }
+
+        detailPokemon += `</div>`;
+
         let modal_background = document.querySelector('.modal_background');
         modal_background.style.display =
           'flex'
