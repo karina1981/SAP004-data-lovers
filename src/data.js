@@ -22,11 +22,9 @@ const search = {
 
         if (nomeA > nomeB) {
           return 1;
-        }
-
-        if (nomeA < nomeB) {
-          return -1;
-        }
+        } 
+        return -1;
+        
         // return 0;
       });
     }
@@ -40,10 +38,7 @@ const search = {
           return 1;
         }
 
-        if (nomeA > nomeB) {
-          return -1;
-        }
-        // return 0;
+        return -1;
       });
     }
     return orderedList;
