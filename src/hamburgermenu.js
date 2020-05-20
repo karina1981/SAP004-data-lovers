@@ -1,5 +1,3 @@
-//controle de abertura e fechamento do menu hamburger
-
 const navigationWrapper = document.getElementById("navigation-wrapper")
 const hamburgerIcon = document.getElementById("top-menu-icon")
 function toggleMenu() {
@@ -7,6 +5,5 @@ function toggleMenu() {
   hamburgerIcon.classList.toggle("hide-visibility")
 }
 
-//--verificando eventos função menu hamburger
 document.getElementById("menu-icon").addEventListener("click", toggleMenu)
 document.getElementById("close-menu-icon").addEventListener("click", toggleMenu)

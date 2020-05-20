@@ -1,4 +1,3 @@
-/* menu hamburger */
 #top-menu-wrapper {
   display: flex;
   padding: 20px;
@@ -63,8 +62,6 @@
   margin-bottom: 0px;
 }
 
-/* fim menu hamburger */
-
 .imagem-logo {
   display: flex;
   justify-content: center;
@@ -86,8 +83,6 @@ body {
   background-repeat: no-repeat;
   background-color: rgba(62, 108, 188);
 }
-
-/* container botão */
 
 .buttons-seasons {
   display: flex;
@@ -120,10 +115,6 @@ body {
   background-color: #cc413a;
 }
 
-/* fim botões */
-
-/* video container */
-
 .video {
   display: flex;
   justify-content: center;
@@ -151,10 +142,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/*fim video*/
-
-/* texto */
 
 .texto-box {
   display: flex;
@@ -196,14 +183,13 @@ body {
   .buttons-seasons{
     max-width: 400px;
   }
-   
- .imagem-logo img{
-   max-width: 100%;
-   height: auto;
+
+  .imagem-logo img{
+    max-width: 100%;
+    height: auto;
   }
 
   .icon {
     font-size: 30px;
   }
-
 }
