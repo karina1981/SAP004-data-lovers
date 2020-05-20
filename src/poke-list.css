@@ -1,4 +1,7 @@
-/* menu hamburger */
+header {
+  display: flex;
+}
+
 #top-menu-wrapper {
   display: flex;
   padding: 20px;
@@ -232,7 +235,7 @@ body {
 @media (min-width: 601px) and (max-width: 900px){
   .barra-navegacao {
     flex-wrap: wrap;
-    margin-top: -55px;
+    /*margin-top: -55px;*/
   }
 
   .header{
@@ -241,10 +244,10 @@ body {
   }
 
   .imagem-logo img{
-    width: 511px;
-    height: 176px;
+    width: 350px;
+    height: 130px;
     position: relative;
-    top: -81px;
+    /*top: -81px; */
     left: 40px;
   }
 
@@ -291,8 +294,8 @@ body {
   .imagem-logo img{
     width: 245px;
     height: 89px;
-    position: relative;
-    top: -90px;
+    /*position: relative;*/
+    /*top: -90px;*/
     left: 40px;
   }
 
