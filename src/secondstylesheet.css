@@ -140,13 +140,12 @@ body {
   width: 80%;
   float: left;
   padding: 1em;
-  background:  rgba(42, 82, 147, 80%); /* mudei essa cor pra conversar melhor com a nossa cartela*/
+  background:  rgba(42, 82, 147, 80%);
 }
 
 .pokecard:hover {
   background: url('imagens/pokebola.png');
   background-size: 150%;
-  /* color: #FFD700; */
 }
 
 .miniaturaPokemon:hover {
@@ -166,7 +165,6 @@ body {
 }
 
 .modal_background {
-  /* background: url('imagens/pokebola-aberta.png'); */
   display: none;
   flex-direction: row;
   justify-content: center;
@@ -178,8 +176,7 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(99, 99, 99, 0.5);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*jessica: mudei a fonte */
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .modal_background .modal_pokemon {
@@ -204,7 +201,7 @@ body {
   top: -44px;
   display: block;
   position: relative;
-  padding-left: 20px; /*jessica: coloquei padding pois a imagem do pokemon cobre o texto */
+  padding-left: 20px;
 }
 
 .pokelist-modal {
@@ -217,11 +214,11 @@ body {
   color: whitesmoke;
   position: absolute;
   left: 31%;
-  padding-right: 20px; /* jessica: tentando encaixar a imagem pra fora do texto*/
+  padding-right: 20px;
 }
 
 .miniaturaPokemon-modal {
-  width: 242px; /*diminui 20px da imagem, pois alguns pokemons estavam saindo da bola aberta*/
+  width: 242px;
 }
 
 #root{
@@ -237,10 +234,6 @@ body {
     flex-wrap: wrap;
     margin-top: -55px;
   }
-
-  /* .btn-space {
-    margin: 0.4em;
-  } */
 
   .header{
     position: fixed;
@@ -274,16 +267,10 @@ body {
     font-size: 16px;
   }
 
-  /* .btn-orientation {
-    padding: 0px;
-  }  */
-
   .modal_background .modal_pokemon {
     top: -74px;
     position: relative;
   }
-
-
 }
 
 @media (max-width: 600px){
@@ -331,3 +318,5 @@ body {
     position: relative;
   }
 }
+
+

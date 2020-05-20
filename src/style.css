@@ -44,6 +44,11 @@ body {
   background-color:  #2a5293;
 }
 
+.minipoks{
+  width: 80px;
+  height: 80px;
+}
+
 .text{
   display: flex;
   justify-content: center;
@@ -62,10 +67,10 @@ p{
   background-color: rgb(243, 243, 243, 60%);
 }
 
-/* @media (max-width: 850px)
+@media (min-width:701x) and (max-width: 900px)
 {
   .buttons-container{
-    display: grid;
+    display: flex;
   }
 
   .buttons{
@@ -81,27 +86,30 @@ p{
     font-size: 1em;
     font-weight: 400;
   }
-} */
 
-/* home tablet deitado */
-@media (max-width: 376px)
+} 
+
+@media (max-width: 700px)
 {
-  .botoes-todos{
-    display: flex;
-  }
-
   .buttons{
     margin: 0.4em;
-    width: 100px;
   }
 
-.logo img {
-  width: 82%;
-  height: 110px;
+  .logo img {
+    width: 82%;
+    height: 110px;
   }
 
   .texto{
     font-size: 1.6em;
   }
 
+  .buttons-container {
+    margin: -2px 15px 15px 0;
+    flex-wrap: wrap;
+  }
+
+  .plus { 
+    font-size: 1em;
+  }
 }
