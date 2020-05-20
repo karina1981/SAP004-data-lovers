@@ -1,0 +1,137 @@
+#top-menu-wrapper {
+    display: flex;
+    padding: 20px;
+}
+
+.icon {
+    color: #ef4036;
+    font-size: 50px;
+    flex: 0;
+}
+
+#top-menu {
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+#top-menu-icon {
+    padding: 0px 0px 0px 0px;
+}
+
+#top-menu a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navigation-wrapper {
+    z-index: 1000;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.disable-display {
+    display: none;
+}
+
+.hide-visibility {
+    visibility: hidden;
+}
+
+#close-menu-icon-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 10px;
+    background-color: rgba(62, 108, 188, 30%);
+}
+
+#top-menu li {
+    font-size: 25px;
+    list-style: none;
+    border-bottom: 1px solid black;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 10px 0px 10px;
+}
+
+#top-menu li:first-child {
+    margin-top: 0px;
+}
+
+#top-menu li:last-child {
+    margin-bottom: 0px;
+}
+
+/* fim menu hamburger */
+
+.imagem-logo {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 10px 10px;
+    margin: 0px 0px 0px 20px;
+    flex: 10;
+}
+
+.imagem-logo img {
+    width: 350px;
+    height: 130px;
+}
+
+body {
+    background-image: url(imagens/background.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(62, 108, 188);
+}
+
+.imagem-logo {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 10px 10px;
+    margin: 0px 0px 0px 20px;
+    flex: 10;
+}
+
+.imagem-logo img {
+    width: 350px;
+    height: 130px;
+}
+
+body {
+    background-image: url(imagens/background.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(62, 108, 188);
+}
+
+
+.texto-em-construcao {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #606163;
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(243, 243, 243, 35%);
+  }
+
+  
+@media (max-width: 850px) {
+       
+   .imagem-logo img{
+     max-width: 100%;
+     height: auto;
+    }
+  
+    .icon {
+      font-size: 30px;
+    }
+  
+  }

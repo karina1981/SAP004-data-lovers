@@ -1,3 +1,4 @@
+/* menu hamburger */
 #top-menu-wrapper {
   display: flex;
   padding: 20px;
@@ -5,22 +6,27 @@
 
 .icon {
   color: #ef4036;
-  font-size: 40px;
+  font-size: 50px;
   flex: 0;
-  ;
 }
 
 #top-menu {
-  background-color: white;
+  background-color: whitesmoke;
   padding: 20px;
+}
+
+#top-menu-icon {
+  padding: 0px 0px 0px 0px;
 }
 
 #top-menu a {
   text-decoration: none;
   color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #navigation-wrapper {
+  z-index: 1000;
   position: absolute;
   top: 20px;
   left: 20px;
@@ -45,7 +51,7 @@
   font-size: 25px;
   list-style: none;
   border-bottom: 1px solid black;
-  margin: 50px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
   padding: 0px 10px 0px 10px;
 }
 
@@ -66,8 +72,8 @@
 }
 
 .imagem-logo img {
-  width: 633px;
-  height: 194px;
+  width: 350px;
+  height: 130px;
 }
 
 .barra-navegacao {
@@ -109,19 +115,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: rgba(62, 108, 188);
-}
-
-.texto-em-construcao {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 25px;
-  font-weight: 400;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #606163;
-  padding: 10px;
-  margin: 0;
-  background-color: rgb(243, 243, 243, 35%);
 }
 
 .pokeimg {
