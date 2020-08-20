@@ -1,0 +1,195 @@
+#top-menu-wrapper {
+  display: flex;
+  padding: 20px;
+}
+
+.icon {
+  color: #ef4036;
+  font-size: 50px;
+  flex: 0;
+}
+
+#top-menu {
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+#top-menu-icon {
+  padding: 0px 0px 0px 0px;
+}
+
+#top-menu a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navigation-wrapper {
+  z-index: 1000;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.disable-display {
+  display: none;
+}
+
+.hide-visibility {
+  visibility: hidden;
+}
+
+#close-menu-icon-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 10px 10px;
+  background-color: rgba(62, 108, 188, 30%);
+}
+
+#top-menu li {
+  font-size: 25px;
+  list-style: none;
+  border-bottom: 1px solid black;
+  margin: 20px 0px 20px 0px;
+  padding: 0px 10px 0px 10px;
+}
+
+#top-menu li:first-child {
+  margin-top: 0px;
+}
+
+#top-menu li:last-child {
+  margin-bottom: 0px;
+}
+
+.imagem-logo {
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px 10px 10px;
+  margin: 0px 0px 0px 20px;
+  flex: 10;
+}
+
+.imagem-logo img {
+  width: 350px;
+  height: 130px;
+}
+
+body {
+  background-image: url(imagens/background.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgba(62, 108, 188);
+}
+
+.buttons-seasons {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  flex-flow: row wrap;
+}
+
+.buttons {
+  align-items: center;
+  background-color: #ef4036;
+  padding: 0px;
+  margin: 5px 5px 5px 5px;
+  border: 0px;
+  height: 50px;
+  width: 150px;
+  justify-content: center;
+}
+
+.buttons-content {
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  color: aliceblue;
+}
+
+.buttons:hover {
+  background-color: #cc413a;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.video1 {
+  width: 500px;
+  height: 315px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-items: center;
+}
+
+.img-tv {
+  display: grid;
+  grid-template-columns: 9% 71% 20%;
+  grid-template-rows: 30% 50% 20%;
+  background-image: url(imagens/poketv.png);
+  width: 700px;
+  height: 600px;
+  background-size: 700px 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.texto-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #606163;
+  padding: 10px 5px 5px 5px;
+  margin: 10px 0px 40px 0px;
+}
+
+.text-information {
+  padding: 30px 30px 40px 30px;
+  margin: 40px 0px 0px 0px;
+  background-color: rgb(243, 243, 243, 80%);
+  border-radius: 50%;
+}
+
+@media (max-width: 850px) {
+  .img-tv {
+    display: flex;
+    justify-content: center;
+    background-image: none;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+
+  .img-tv iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .buttons-seasons{
+    max-width: 400px;
+  }
+
+  .imagem-logo img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .icon {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <title>PokeList</title>
+  <link rel="stylesheet" href="poke-list.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div id="top-menu-wrapper">
+      <div id="top-menu-icon">
+        <a href="javascript:void(0);" class="icon" id="menu-icon">
+          <i class="fa fa-bars border"></i>
+        </a>
+      </div>
+
+      <div id="navigation-wrapper" class="disable-display">
+        <div id="close-menu-icon-wrapper">
+          <a href="javascript:void(0);" class="icon" id="close-menu-icon">
+            <i class="fa fa-times"></i>
+          </a>
+        </div>
+
+        <nav id="top-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="poketv.html">Poké-TV</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="comunidade.html">Comunidade</a></li>
+        </nav>
+
+      </div>
+    </div>  
+    <div class="imagem-logo">
+      <img src="imagens/logopokefun.png" alt="logo pokefun">
+    </div>
+  </header>
+
+  <nav class="barra-navegacao">
+    <form class="btn-space">
+      <label class="btn-orientation" for="search-box" title="Buscar">BUSCAR:</label>
+      <input type="text" placeholder="Ex: Pikachu" class="button-style" id="search-box">
+    
+      <div class="btn-space">
+        <label class="btn-orientation" for="select-type" title="filtrar">FILTRAR:</label>
+        <select id="select-type" class="button-style">
+          <option value="" disabled selected>Tipos</option>
+        </select>
+      </div>
+
+      <div class="btn-space">
+        <label class="btn-orientation" for="order-by-alphabet" title="ordenar">ORDENAR:</label>
+        <select id="order-by-alphabet" name="order-by-alphabet" class="button-style">
+          <option value="" disabled selected>Nomes</option>
+          <option value="ascendente">A-Z</option>
+          <option value="descendente">Z-A</option>
+        </select>
+      </div>
+    </form>
+  </nav>
+
+  <div class="modal_background">
+    <div class="modal_pokemon" tabindex="-1">
+      <button type="button" class="buttonCloseModal">X</button>
+      <div class="modal_pokemon_content" tabindex="-1">
+      </div>
+    </div>
+  </div>
+
+  <div id="percent" class="percent-information"></div>
+  <div id="root"></div>
+
+  <script src="main.js" type="module"></script>
+  <script src="hamburgermenu.js" type="module"></script>
+</body>
+</html>

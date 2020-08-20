@@ -1,0 +1,323 @@
+header {
+  display: flex;
+}
+
+#top-menu-wrapper {
+  display: flex;
+  padding: 20px;
+}
+
+.icon {
+  color: #ef4036;
+  font-size: 50px;
+  flex: 0;
+}
+
+#top-menu {
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+#top-menu-icon {
+  padding: 0px 0px 0px 0px;
+}
+
+#top-menu a {
+  text-decoration: none;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navigation-wrapper {
+  z-index: 1000;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.disable-display {
+  display: none;
+}
+
+.hide-visibility {
+  visibility: hidden;
+}
+
+#close-menu-icon-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 10px 10px;
+  background-color: rgba(62, 108, 188, 30%);
+}
+
+#top-menu li {
+  font-size: 25px;
+  list-style: none;
+  border-bottom: 1px solid black;
+  margin: 20px 0px 20px 0px;
+  padding: 0px 10px 0px 10px;
+}
+
+#top-menu li:first-child {
+  margin-top: 0px;
+}
+
+#top-menu li:last-child {
+  margin-bottom: 0px;
+}
+
+.imagem-logo {
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px 10px 10px;
+  margin: 0px 0px 0px 20px;
+  flex: 10;
+}
+
+.imagem-logo img {
+  width: 350px;
+  height: 130px;
+}
+
+.barra-navegacao {
+  display: flex;
+  margin: 20px;
+  justify-content: space-evenly;
+}
+
+.btn-space {
+  display: flex;
+}
+
+.button-style {
+  display: flex;
+  width: 160px;
+  height: 40px;
+  margin: 0px;
+  padding: 0px 2px 0px 5px;
+  border: 0px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-orientation {
+  display: flex;
+  align-items: center;
+  background-color: #ef4036;
+  color: white;
+  padding: 8px;
+  margin: 0px 5px 0px 0px;
+  border-radius: 5%;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(imagens/background.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgba(62, 108, 188);
+}
+
+.pokeimg {
+  width: 60%;
+}
+
+.pokecard {
+  background-color: rgba(62, 108, 188, 80%);
+  border-radius: 18%;
+  align-items: center;
+  color: white;
+  font-size: 19px;
+  width: 15%;
+  min-height: 235px;
+  margin: 10px;
+  padding: 1em 1em 2em 2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pokelist {
+  border-radius: 5%;
+  font-size: 80%;
+  width: 80%;
+  float: left;
+  padding: 1em;
+  background: rgba(42, 82, 147, 80%);
+}
+
+.pokecard:hover {
+  background: url("imagens/pokebola.png");
+  background-size: 150%;
+}
+
+.miniaturaPokemon:hover {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.percent-information {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.modal_background {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 99, 99, 0.5);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal_background .modal_pokemon {
+  background: url("imagens/pokebola-aberta.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 450px;
+  height: 500px;
+}
+
+.modal_pokemon_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 100%;
+}
+
+.pokeimg-modal {
+  z-index: 999;
+  top: -44px;
+  display: block;
+  position: relative;
+  padding-left: 20px;
+}
+
+.pokelist-modal {
+  width: 12%;
+  background: rgba(239, 64, 54, 0.9);
+  border-radius: 10px;
+  padding: 1.4em;
+  line-height: 1em;
+  display: block;
+  color: whitesmoke;
+  position: absolute;
+  left: 31%;
+  padding-right: 20px;
+}
+
+.miniaturaPokemon-modal {
+  width: 242px;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .barra-navegacao {
+    flex-wrap: wrap;
+    /*margin-top: -55px;*/
+  }
+
+  .header {
+    position: fixed;
+    margin-top: -100px;
+  }
+
+  .imagem-logo img {
+    width: 350px;
+    height: 130px;
+    position: relative;
+    /*top: -81px; */
+    left: 40px;
+  }
+
+  .pokecard {
+    align-items: center;
+    font-size: 19px;
+    width: 23%;
+  }
+
+  .pokelist-modal {
+    width: 56%;
+    left: 56px;
+    top: 337px;
+  }
+
+  .button-style {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .modal_background .modal_pokemon {
+    top: -74px;
+    position: relative;
+  }
+}
+
+@media (max-width: 600px) {
+  .barra-navegacao {
+    flex-wrap: wrap;
+    margin-top: 110px;
+  }
+
+  .btn-space {
+    margin: 0.4em;
+  }
+
+  header {
+    position: fixed;
+    margin-top: -100px;
+  }
+
+  .imagem-logo img {
+    width: 245px;
+    height: 89px;
+    /*position: relative;*/
+    /*top: -90px;*/
+    left: 40px;
+  }
+
+  .pokecard {
+    width: 50%;
+  }
+
+  .pokelist-modal {
+    width: 56%;
+    left: 56px;
+    top: 337px;
+  }
+
+  .button-style {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .modal_background .modal_pokemon {
+    top: -74px;
+    position: relative;
+  }
+}
