@@ -35,6 +35,8 @@ Percebemos algumas outras necessidades, como por exemplo, relembrar a série que
 
 A PokéFun contém duas páginas que estão em construção, a Eventos e Comunidade. Em Evento, o usuário poderá se informar sobre os eventos do jogo e em Comunidade poderão visualizar grupos de jogadores por todo mundo.
 
+<img src="img_readme/final.jpg" alt="rascunho" width="300"/>
+
 ## 3. Desenho de Interface <img src="src/imagens/tv.png" alt="rascunho" width="30"/>
 
 <b>Protótipo de baixa fidelidade - Papel</b>
@@ -54,9 +56,6 @@ Posteriormente, fizemos o teste de média fidelidade no Photoshop, já com a pro
 ## 4. Teste de Usabilidade <img src="src/imagens/lupa.png" alt="rascunho" width="30"/>
 Durante a criação do projeto fizemos teste de usabilidade com os usuários. No teste, o principal problema detectado foi a falta de um botão para voltar para a Home ou ir para as outras páginas. Assim, decidimos criar o menu hamburger. 
 
-## Final
-
-<img src="src/imagens/final.jpg" alt="rascunho" width="300"/>
 
 ## 5. Autoria e Considerações Finais <img src="src/imagens/mundo.png" alt="rascunho" width="30"/>
 Esse projeto foi desenvolvido em dupla por Jessica Brunhara e Karina Pereira como parte do bootcamp < Laboratoria >. Foi um grande desafio que trouxe um grande aprendizado!
