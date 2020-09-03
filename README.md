@@ -35,7 +35,7 @@ Percebemos algumas outras necessidades, como por exemplo, relembrar a série que
 
 A PokéFun contém duas páginas que estão em construção, a Eventos e Comunidade. Em Evento, o usuário poderá se informar sobre os eventos do jogo e em Comunidade poderão visualizar grupos de jogadores por todo mundo.
 
-<img src="img_readme/final.jpg" alt="rascunho" width="300"/>
+<img src="src/imagens/final.jpg" alt="rascunho" width="300"/>
 
 ## 3. Desenho de Interface <img src="src/imagens/tv.png" alt="rascunho" width="30"/>
 
